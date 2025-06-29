@@ -1,3 +1,29 @@
+# Ignore everything in the private/ folder
+/private/*
+# But do not ignore README.md
+!/private/README.md
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Files starting with ._
+._*
+
+# Spotlight and Finder metadata
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# macOS folder attributes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# macOS volume settings
+.VolumeIcon.icns
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
