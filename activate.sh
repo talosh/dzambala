@@ -11,9 +11,9 @@ cd "$SCRIPT_DIR"
 
 # Use the Python from the currently activated conda environment
 PYTHON_CMD="python"
-# PYTHON_SCRIPT="./private/llm/scripts/run.py"
+# PYTHON_SCRIPT="./private/lllm/scripts/run.py"
 PYTHON_SCRIPT="./private/test.py"
 CUSTOM_RC="$SCRIPT_DIR/dzambala.bashrc"
 
 # Run under group 'inet' with local .bashrc and correct working directory
-sg inet -c "cd \"$SCRIPT_DIR\" && bash --rcfile \"$CUSTOM_RC\" -i -c '$PYTHON_CMD $PYTHON_SCRIPT $*'"
+sg inet -c "cd \"$SCRIPT_DIR\" && bash --rcfile \"$CUSTOM_RC\""
