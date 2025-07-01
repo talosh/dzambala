@@ -1,4 +1,4 @@
 #!/bin/bash
 
-rdfind -makehardlinks true /mnt/projects/dzambala_data/
+rdfind -makehardlinks true /mnt/StorageMedia/dzambala_data/
 rm results.txt

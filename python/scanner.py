@@ -15,7 +15,7 @@ def create_graceful_exit():
 signal.signal(signal.SIGINT, create_graceful_exit())
 
 # Define your dataset path
-dataset_path = '/mnt/projects/dzambala_data'
+dataset_path = '/mnt/StorageMedia/dzambala_data'
 
 def wait_until_next_5min():
     now = datetime.now()
