@@ -3,6 +3,10 @@ import time
 from datetime import datetime
 import yfinance as yf
 import json
+import uuid
+import random
+
+import trafilatura
 
 import signal
 def create_graceful_exit():
@@ -26,6 +30,16 @@ def wait_until_next_5min():
         time.sleep(seconds_until_next_5min)
 
 wait_until_next_5min()
+
+news_additional_topics = set()
+with open(os.path.dirname(__file__) + "/topics.txt", "r") as f:
+    for line in f:
+        line = line.strip()
+        if line:
+            news_additional_topics.add(line)
+
+news_uuids = set()
+step = 0
 
 while True:
     now = datetime.now()
@@ -166,39 +180,6 @@ while True:
         x = yf.Lookup("^XDA").index
         x.to_csv(os.path.join(full_path, "index_xda.csv"), index=False)
 
-        # === News
-
-        x = yf.Search("Crypto", news_count=10).news
-        with open(os.path.join(full_path, "news_crypto.json"), "w") as f:
-            json.dump(x, f, indent=4, default=str)
-        x = yf.Search("Finance", news_count=10).news
-        with open(os.path.join(full_path, "news_finance.json"), "w") as f:
-            json.dump(x, f, indent=4, default=str)
-        x = yf.Search("Asia", news_count=10).news
-        with open(os.path.join(full_path, "news_asia.json"), "w") as f:
-            json.dump(x, f, indent=4, default=str)
-        x = yf.Search("AI", news_count=10).news
-        with open(os.path.join(full_path, "news_ai.json"), "w") as f:
-            json.dump(x, f, indent=4, default=str)
-        x = yf.Search("Senate", news_count=10).news
-        with open(os.path.join(full_path, "news_senate.json"), "w") as f:
-            json.dump(x, f, indent=4, default=str)
-        x = yf.Search("Parliament", news_count=10).news
-        with open(os.path.join(full_path, "news_parliament.json"), "w") as f:
-            json.dump(x, f, indent=4, default=str)
-        x = yf.Search("Government", news_count=10).news
-        with open(os.path.join(full_path, "news_gov.json"), "w") as f:
-            json.dump(x, f, indent=4, default=str)
-        x = yf.Search("Court", news_count=10).news
-        with open(os.path.join(full_path, "news_court.json"), "w") as f:
-            json.dump(x, f, indent=4, default=str)
-        x = yf.Search("Britain", news_count=10).news
-        with open(os.path.join(full_path, "news_uk.json"), "w") as f:
-            json.dump(x, f, indent=4, default=str)
-        x = yf.Search("EU", news_count=10).news
-        with open(os.path.join(full_path, "news_eu.json"), "w") as f:
-            json.dump(x, f, indent=4, default=str)
-
         # === Features
 
         x = yf.Lookup("GC=F").future
@@ -303,11 +284,61 @@ while True:
         x = yf.Lookup("UAH=X").currency
         x.to_csv(os.path.join(full_path, "currency_usduah.csv"), index=False)
 
+        # === News
+
+        news_main_topics = [
+            'Monero',
+            'XMR',
+            'Crypto',
+            'Digital Wallets',
+            'Finance',
+            'Asia',
+            'AI',
+            'Senate',
+            'Parliament',
+            'Government',
+            'Court',
+            'Britain',
+            'EU'
+        ]
+
+        news_main_topics.extend(random.sample(list(news_additional_topics), len(news_main_topics)))
+        news_folder = os.path.abspath(os.path.join(full_path, 'news'))
+        try:
+            os.makedirs(news_folder)
+        except Exception as e:
+            print (e)
+
+        for topic in news_main_topics:
+            news = yf.Search(topic, news_count=4).news
+            for count, item in enumerate(news):
+                try:
+                    uid = item.get("uuid", str(uuid.uuid4()))
+                    filename = f'{topic.replace(" ", "_").lower()}.{uid}.json'
+                    if os.path.isfile(os.path.join(news_folder, filename)):
+                        continue
+                    if uid in news_uuids:
+                        continue
+                    news_uuids.add(uid)
+                    url = item.get('link')
+                    downloaded = trafilatura.fetch_url(url)
+                    text = trafilatura.extract(downloaded)
+                    downloaded = 'None'
+                    text = text.split('More News')[0]
+                    item['text_body'] = text
+                    with open(os.path.join(news_folder, filename), "w") as f:
+                        json.dump(item, f, indent=4, default=str)
+                except Exception as e:
+                    print (e)
 
     except Exception as e:
         print (e)
 
-    print(f"Completed: {full_path}")
     elapsed = time.time() - cycle_start
+    print(f"Completed: {full_path}, took {elapsed:06.2f}")
     sleep_time = max(0, 300 - elapsed)
     time.sleep(sleep_time)
+
+    step = step + 1
+    if (step % 288 * 7) == 0:
+        news_uuids = set()
