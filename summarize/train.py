@@ -352,7 +352,7 @@ def main():
         info += f'\n\n'
         # info += f'Prompt: {prompt}\n\n'
         info += f'T: {format_text(gt, 100)}\n'
-        info += f'R: {format_text(result["result"], 100).strip()}\n'
+        info += f'R: {format_text(result["result"], 100).strip()}\n\n'
         info += f'P: {format_text(prompt, 100)}\n'
         print (f'\r{info}')
         lines_to_clear = len(info.splitlines())

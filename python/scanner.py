@@ -102,6 +102,24 @@ while True:
         x = yf.Lookup("PEPE24478-USD").get_cryptocurrency(count=1)
         x.to_csv(os.path.join(full_path, "crypto_pepeusd.csv"), index=False)
 
+        x = yf.Lookup("USDT-USD").get_cryptocurrency(count=1)
+        x.to_csv(os.path.join(full_path, "crypto_pepeusd.csv"), index=False)
+
+        x = yf.Lookup("USDC-USD").get_cryptocurrency(count=1)
+        x.to_csv(os.path.join(full_path, "crypto_pepeusd.csv"), index=False)
+
+        x = yf.Lookup("BNB-USD").get_cryptocurrency(count=1)
+        x.to_csv(os.path.join(full_path, "crypto_pepeusd.csv"), index=False)
+
+        x = yf.Lookup("SOL-USD").get_cryptocurrency(count=1)
+        x.to_csv(os.path.join(full_path, "crypto_pepeusd.csv"), index=False)
+
+        x = yf.Lookup("DOGE-USD").get_cryptocurrency(count=1)
+        x.to_csv(os.path.join(full_path, "crypto_pepeusd.csv"), index=False)
+
+        x = yf.Lookup("ADA-USD").get_cryptocurrency(count=1)
+        x.to_csv(os.path.join(full_path, "crypto_pepeusd.csv"), index=False)
+
         # === Indexes
 
         x = yf.Lookup("GSPC").index
