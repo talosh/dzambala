@@ -1,6 +1,7 @@
 import os
 import time
-from datetime import datetime
+from datetime import datetime, timezone
+import pytz
 import yfinance as yf
 import json
 import uuid
@@ -42,14 +43,20 @@ news_uuids = set()
 step = 0
 
 while True:
-    now = datetime.now()
-    folder_name = now.strftime('%Y%m%d_%H%M')  # Format: YYYYMMDD_HHMM
+    tz = pytz.timezone('Europe/London')
+    now = datetime.now(tz)
+    tz_abbr = now.tzname()
+    folder_name = now.strftime(f'%Y%m%d_%H%M_{tz_abbr}') # Format: YYYYMMDD_HHMM_BST
     full_path = os.path.join(dataset_path, folder_name)
-    os.makedirs(full_path, exist_ok=True)
-
     cycle_start = time.time()
 
     try:
+        os.makedirs(full_path, exist_ok=True)
+        now_utc = datetime.now(timezone.utc)
+        timestamp = int(now_utc.timestamp())
+        timestamp_path = os.path.join(full_path, f"{timestamp}.timestamp")
+        with open(timestamp_path, 'a'):
+            os.utime(timestamp_path, None)
 
         # ===
 
