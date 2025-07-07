@@ -1,14 +1,31 @@
+ADA
+Cardano
+USD
+US dollar
+BNB 
+Binance
+BTC
+Bitcoin
+EUR
+Euro
+GBP
+British pound
+UK
+Sterling
+CFX
+Conflux
+DOGE
+Dogecoin
+ETH
+Ethereum
+PEPE
 XMR
 XRP
-Bitcoin
-BTC
-Etherium
-ETH
-Conflux
-CFX
+
 Platinum
 Gold
 Silver
+Copper
 Oil
 Gas
 Brent

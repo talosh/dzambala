@@ -32,12 +32,23 @@ def wait_until_next_5min():
 
 wait_until_next_5min()
 
-news_additional_topics = set()
+news_topics = set()
 with open(os.path.dirname(__file__) + "/topics.txt", "r") as f:
     for line in f:
         line = line.strip()
         if line:
-            news_additional_topics.add(line)
+            news_topics.add(line)
+
+'''
+news_uuids = dict()
+uuids_file = '/var/tmp/dzambala_bews_uids.json'
+if os.path.isfile(uuids_file):
+    try:
+        with open(uuids_file, 'r') as f:
+            data = json.load(f)
+    except:
+        pass
+'''
 
 news_uuids = set()
 step = 0
@@ -103,22 +114,22 @@ while True:
         x.to_csv(os.path.join(full_path, "crypto_pepeusd.csv"), index=False)
 
         x = yf.Lookup("USDT-USD").get_cryptocurrency(count=1)
-        x.to_csv(os.path.join(full_path, "crypto_pepeusd.csv"), index=False)
+        x.to_csv(os.path.join(full_path, "crypto_usdtusd.csv"), index=False)
 
         x = yf.Lookup("USDC-USD").get_cryptocurrency(count=1)
-        x.to_csv(os.path.join(full_path, "crypto_pepeusd.csv"), index=False)
+        x.to_csv(os.path.join(full_path, "crypto_usdcusd.csv"), index=False)
 
         x = yf.Lookup("BNB-USD").get_cryptocurrency(count=1)
-        x.to_csv(os.path.join(full_path, "crypto_pepeusd.csv"), index=False)
+        x.to_csv(os.path.join(full_path, "crypto_bnbusd.csv"), index=False)
 
         x = yf.Lookup("SOL-USD").get_cryptocurrency(count=1)
-        x.to_csv(os.path.join(full_path, "crypto_pepeusd.csv"), index=False)
+        x.to_csv(os.path.join(full_path, "crypto_solusd.csv"), index=False)
 
         x = yf.Lookup("DOGE-USD").get_cryptocurrency(count=1)
-        x.to_csv(os.path.join(full_path, "crypto_pepeusd.csv"), index=False)
+        x.to_csv(os.path.join(full_path, "crypto_dogeusd.csv"), index=False)
 
         x = yf.Lookup("ADA-USD").get_cryptocurrency(count=1)
-        x.to_csv(os.path.join(full_path, "crypto_pepeusd.csv"), index=False)
+        x.to_csv(os.path.join(full_path, "crypto_adausd.csv"), index=False)
 
         # === Indexes
 
@@ -312,10 +323,51 @@ while True:
         # === News
 
         news_main_topics = [
+            'Trading',
+            'Excanges',
+            'Transactions',
+            'Governance',
+            'Staking',
+            'DeFi',
+            'Decentralized',
             'Monero',
             'XMR',
+            'Cardano',
+            'BNB',
+            'Bitcoin',
+            'Conflux',
+            'Dogecoin',
+            'Ethereum',
+            'Pepe',
+            'Solana',
+            'USDC',
+            'Tether',
+            'XRP',
             'Crypto',
             'Digital Wallets',
+            'Pound',
+            'GBP',
+            'Euro',
+            'EUR',
+            'Yen',
+            'JPY',
+            'Rupee',
+            'INR',
+            'Dollar',
+            'USD',
+            'CAD',
+            'Franc',
+            'CHF',
+            'IMF',
+            'Drawing Rights',
+            'Brent',
+            'Cocoa',
+            'Coffee',
+            'Copper',
+            'Corn',
+            'Cotton',
+            'Gas',
+            'Gold',
             'Finance',
             'Asia',
             'AI',
@@ -324,17 +376,28 @@ while True:
             'Government',
             'Court',
             'Britain',
-            'EU'
+            'EU',
+            'Credit risk',
+            'Market risk',
+            'Market predictions',
+            'Tariff'
         ]
 
-        news_main_topics.extend(random.sample(list(news_additional_topics), len(news_main_topics)))
+        # news_main_topics.extend(random.sample(list(news_topics), len(news_main_topics)))
+        news_main_topics.extend(list(news_topics))
         news_folder = os.path.abspath(os.path.join(full_path, 'news'))
         try:
             os.makedirs(news_folder)
         except Exception as e:
             print (e)
 
+        total_news = 0
+
         for topic in news_main_topics:
+            
+            if total_news > 128:
+                continue
+
             news = yf.Search(topic, news_count=4).news
             for count, item in enumerate(news):
                 try:
@@ -353,6 +416,7 @@ while True:
                     item['text_body'] = text
                     with open(os.path.join(news_folder, filename), "w") as f:
                         json.dump(item, f, indent=4, default=str)
+                    total_news = total_news + 1
                 except Exception as e:
                     print (e)
 

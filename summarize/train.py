@@ -111,7 +111,7 @@ import signal
 def create_graceful_exit(current_state_dict):
     def graceful_exit(signum, frame):
         exit_event.set()
-        print (f'keys at exit: {current_state_dict.keys()}')
+        # print (f'keys at exit: {current_state_dict.keys()}')
         if model_loaded_event.is_set():
             ckpt_path = current_state_dict["ckpt_path"]
             print(f'\nSaving current state to {ckpt_path}...')
@@ -122,6 +122,8 @@ def create_graceful_exit(current_state_dict):
 def exeption_handler(exctype, value, tb):
     exit_event.set()
     sys.__excepthook__(exctype, value, tb)
+sys.excepthook = exeption_handler
+
 
 def main():
     current_state_dict = {}
@@ -135,6 +137,7 @@ def main():
     parser.add_argument('dataset_path', type=str, help='Path to the dataset')
     # Optional arguments
     parser.add_argument('--lr', type=float, default=1e-6, help='Learning rate (default: 1e-6)')
+    parser.add_argument('--decay', type=float, default=1e-3, help='Weight decay (default: 1e-3)')
     parser.add_argument('--device', type=int, default=1, help='Graphics card index (default: 2)')
     parser.add_argument('--acc', type=int, default=4, help='Gradient accumulation steps (int) (default: 4)')
     parser.add_argument('--ckpt', type=str, default=None, help='Path to the pre-trained model state dict file)')
@@ -207,7 +210,7 @@ def main():
     write_model_state_thread.start()
 
     lr = args.lr
-    optimizer = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=1e-4)
+    optimizer = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=args.decay)
     loss_fn = nn.CrossEntropyLoss(ignore_index=model.tokenizer.pad_id)
 
     start_timestamp = time.time()
@@ -254,21 +257,35 @@ def main():
         step = step + 1
         batch_idx = batch_idx +1
 
-        summ = sample.get('summarized', 'Unable to get data')
+        if 'prompt' in sample:
+            prompt = sample['prompt']
+            gt = sample['summ']
+        else:
+            # news first attempt data
+            summ = sample.get('summarized', 'Unable to get data')
 
-        prompt = summ[1]
-        gt = summ[0]
+            prompt = summ[1]
+            gt = summ[0]
 
-        if random.uniform(0, 1) < 0.5:
-            try:
-                prompt = summ[2]
-                if random.uniform(0, 1) < 0.5:
-                    gt = summ[1]
-            except:
-                pass
+            if random.uniform(0, 1) < 0.5:
+                try:
+                    prompt = summ[2]
+                    # if random.uniform(0, 1) < 0.5:
+                    #   gt = summ[1]
+                except:
+                    pass
+            
+            if random.uniform(0, 1) < 0.5:
+                prompt_orig = sample.get('text_body', summ[2])
+                prompt_orig_encoded = model.tokenizer.encode(prompt_orig)
+                if len(prompt_orig_encoded) < 384:
+                    prompt = prompt_orig
 
-        # if random.uniform(0, 1) < 0.5:
-        #    prompt = sample.get('text_body', summ[1])
+        if isinstance(gt, list) and len(gt) > 0:
+            gt = gt[0]
+
+        prompt = str(prompt)
+        gt = str(gt)
 
         gt_encoded = model.tokenizer.encode(gt, bos=False)
 
@@ -279,49 +296,55 @@ def main():
         max_len = max(len(prompt_encoded), max_len)
         info += f'prompt length: {len(prompt_encoded)}, max: {max_len}\n'
 
-        result = model.generate(
-            prompt, 
-            device,
-            temperature=0.02,   # <- greedy decoding
-            # top_k=0,
-            # top_p=1.0,
-            output_len=len(gt_encoded) # FLAGS.output_len
-        )
+        try:
+            result = model.generate(
+                prompt, 
+                device,
+                temperature=0.02,   # <- greedy decoding
+                # top_k=0,
+                # top_p=1.0,
+                output_len=len(gt_encoded) # FLAGS.output_len
+            )
 
-        if not result['all_logits']:
-            # print (sample['file_path'])
+            if not result['all_logits']:
+                # print (sample['file_path'])
+                continue
+
+            model_time = time.time() - time_stamp
+            time_stamp = time.time()
+            
+            logits_seq = torch.stack(result['all_logits'][:1], dim=0)
+            logits_flat = logits_seq.permute(1, 0, 2).reshape(-1, logits_seq.size(-1))
+            target_flat = torch.tensor(gt_encoded[:1], dtype=torch.long).to(device)
+            target_flat = target_flat.reshape(-1)
+            loss_first = loss_fn(logits_flat, target_flat)
+
+            logits_seq = torch.stack(result['all_logits'][:4], dim=0)
+            logits_flat = logits_seq.permute(1, 0, 2).reshape(-1, logits_seq.size(-1))
+            target_flat = torch.tensor(gt_encoded[:4], dtype=torch.long).to(device)
+            target_flat = target_flat.reshape(-1)
+            loss_first4 = loss_fn(logits_flat, target_flat)
+
+            logits_seq = torch.stack(result['all_logits'], dim=0)
+            logits_flat = logits_seq.permute(1, 0, 2).reshape(-1, logits_seq.size(-1))
+            target_flat = torch.tensor(gt_encoded, dtype=torch.long).to(device)
+            target_flat = target_flat.reshape(-1)
+            loss = 0.4 * loss_first + 0.2 * loss_first4 + loss_fn(logits_flat, target_flat)
+
+            (loss / args.acc).backward()
+            if batch_idx % args.acc == 0:
+                torch.nn.utils.clip_grad_norm_(model.parameters(), 1)
+                optimizer.step()
+                optimizer.zero_grad()
+                current_state_dict['model_state_dict'] = model.state_dict()
+                current_state_dict['ckpt_path'] = args.ckpt
+
+        except torch.cuda.OutOfMemoryError:
+            torch.cuda.synchronize(device=device)
+            torch.cuda.empty_cache()
             continue
 
-        model_time = time.time() - time_stamp
-        time_stamp = time.time()
-        
-        logits_seq = torch.stack(result['all_logits'][:1], dim=0)
-        logits_flat = logits_seq.permute(1, 0, 2).reshape(-1, logits_seq.size(-1))
-        target_flat = torch.tensor(gt_encoded[:1], dtype=torch.long).to(device)
-        target_flat = target_flat.reshape(-1)
-        loss_first = loss_fn(logits_flat, target_flat)
-
-        logits_seq = torch.stack(result['all_logits'][:4], dim=0)
-        logits_flat = logits_seq.permute(1, 0, 2).reshape(-1, logits_seq.size(-1))
-        target_flat = torch.tensor(gt_encoded[:4], dtype=torch.long).to(device)
-        target_flat = target_flat.reshape(-1)
-        loss_first4 = loss_fn(logits_flat, target_flat)
-
-        logits_seq = torch.stack(result['all_logits'], dim=0)
-        logits_flat = logits_seq.permute(1, 0, 2).reshape(-1, logits_seq.size(-1))
-        target_flat = torch.tensor(gt_encoded, dtype=torch.long).to(device)
-        target_flat = target_flat.reshape(-1)
-        loss = 0.4 * loss_first + 0.2 * loss_first4 + loss_fn(logits_flat, target_flat)
-
-        (loss / args.acc).backward()
-        if batch_idx % args.acc == 0:
-            torch.nn.utils.clip_grad_norm_(model.parameters(), 1)
-            optimizer.step()
-            optimizer.zero_grad()
-            current_state_dict['model_state_dict'] = model.state_dict()
-            current_state_dict['ckpt_path'] = args.ckpt
-
-        torch.cuda.synchronize(device=device)
+        # torch.cuda.synchronize(device=device)
         train_time = time.time() - time_stamp
         time_stamp = time.time()
 
@@ -332,8 +355,8 @@ def main():
         hours = int((epoch_time % (24 * 3600)) // 3600)
         minutes = int((epoch_time % 3600) // 60)
 
-        if step % 100 == 1:
-            torch.cuda.empty_cache()
+        # if step % 1000 == 1:
+        # torch.cuda.empty_cache()
 
         if step % args.save == 1:
             dict_to_write = {
@@ -360,11 +383,13 @@ def main():
         if ( idx + 1 ) == len(dataset):
             clear_lines(lines_to_clear + 1)
             lines_to_clear = 0
-            print (f'[Epoch {(epoch + 1):04} Step {step} - {days:02}d {hours:02}:{minutes:02}] Avg: {avg_loss}')
+            print (f'[Epoch {(epoch + 1):04} Step {step} - {days:02}d {hours:02}:{minutes:02}] Avg: {avg_loss}\n')
             avg_loss = 0
             epoch = epoch + 1
             batch_idx = 0
 
+            torch.cuda.synchronize(device=device)
+            torch.cuda.empty_cache()
 
     '''
 

@@ -1,0 +1,869 @@
+[
+    {
+        "id":  1,
+        "Group": 1,
+        "Code": "Cardano USD",
+        "Description": "Cardano’s ADA trades versus USD; proof-of-stake blockchain token used for fees, staking, governance.",
+        "News": [
+            "ADA",
+            "Cardano",
+            "USD",
+            "US dollar"
+        ]
+    },
+    {
+        "id":  2,
+        "Group": 1,
+        "Code": "BNB USD",
+        "Description": "BNB/USD shows Binance Coin’s price in US dollars; token powers Binance ecosystem, fees, staking, governance.",
+        "News": [
+            "BNB",
+            "Binance",
+            "USD",
+            "US dollar"
+        ]
+    },
+    {
+        "id":  3,
+        "Group": 1,
+        "Code": "Bitcoin CAD",
+        "Description": "Bitcoin/CAD Bitcoin’s value in Canadian dollars; popular on Canadian exchanges for trading, arbitrage, hedging exposure, risk management.",
+        "News": [
+            "BTC",
+            "Bitcoin",
+            "CAD",
+            "Canadian dollar"
+        ]
+    },
+    {
+        "id":  4,
+        "Group": 0,
+        "Code": "Bitcoin EUR",
+        "Description": "Bitcoin/EUR denotes BTC priced in euros; used for trading, arbitrage, hedging euro exposure, widely listed on exchanges.",
+        "News": [
+            "BTC",
+            "Bitcoin",
+            "Euro",
+            "EUR"
+        ]
+    },
+    {
+        "id":  5,
+        "Group": 0,
+        "Code": "Bitcoin GBP",
+        "Description": "Bitcoin/GBP shows BTC price in British pounds; used for trading, arbitrage, hedging sterling exposure on UK exchanges.",
+        "News": [
+            "BTC",
+            "Bitcoin",
+            "GBP",
+            "Pound",
+            "British pound",
+            "UK",
+            "Sterling"
+        ]
+    },
+    {
+        "id":  6,
+        "Group": 0,
+        "Code": "Bitcoin USD",
+        "Description": "Bitcoin/USD quotes Bitcoin price in US dollars; primary benchmark for trading, settlement, arbitrage, risk management.",
+        "News": [
+            "BTC",
+            "Bitcoin",
+            "USD",
+            "US dollar"
+        ]
+    },
+    {
+        "id":  7,
+        "Group": 0,
+        "Code": "Conflux USD",
+        "Description": "Conflux/USD quotes CFX price in US dollars; layer-1 blockchain token for transactions, staking, governance, cross-chain interoperability.",
+        "News": [
+            "CFX",
+            "Conflux",
+            "USD",
+            "US dollar"
+        ]
+    },
+    {
+        "id":  8,
+        "Group": 1,
+        "Code": "Dogecoin USD",
+        "Description": "Dogecoin/USD shows DOGE price in US dollars; meme-origin coin used for tipping, payments, trading, hedging exposure.",
+        "News": [
+            "DOGE",
+            "Dogecoin",
+            "USD",
+            "US dollar"
+        ]
+    },
+    {
+        "id":  9,
+        "Group": 1,
+        "Code": "Ethereum CAD",
+        "Description": "Ethereum/CAD quotes ETH price in Canadian dollars; common on Canadian exchanges for trading, hedging exposure.",
+        "News": [
+            "ETH",
+            "Ethereum",
+            "CAD",
+            "Canadian dollar"
+        ]
+    },
+    {
+        "id":  10,
+        "Group": 0,
+        "Code": "Ethereum EUR",
+        "Description": "Ethereum/EUR quotes ETH price in euros; used for trading, arbitrage, staking yields, hedging euro exposure.",
+        "News": [
+            "ETH",
+            "Ethereum",
+            "Euro",
+            "EUR"
+        ]
+    },
+    {
+        "id":  11,
+        "Group": 0,
+        "Code": "Ethereum GBP",
+        "Description": "Ethereum/GBP quotes ETH price in British pounds; used on UK exchanges for trading, hedging sterling exposure.",
+        "News": [
+            "ETH",
+            "Ethereum",
+            "GBP",
+            "Pound",
+            "British pound",
+            "UK",
+            "Sterling"
+        ]
+    },
+    {
+        "id":  12,
+        "Group": 0,
+        "Code": "Ethereum USD",
+        "Description": "Ethereum/USD quotes ETH price in US dollars; main benchmark pair for trading, settlement, arbitrage, DeFi pricing.",
+        "News": [
+            "ETH",
+            "Ethereum",
+            "USD",
+            "US dollar"
+        ]
+    },
+    {
+        "id":  13,
+        "Group": 1,
+        "Code": "Pepe USD",
+        "Description": "Pepe/USD shows PEPE meme-token's USD price; ERC-20 frog-inspired coin, purely speculative, traded on exchanges, DEX liquidity pools.",
+        "News": [
+            "PEPE",
+            "USD",
+            "US dollar"
+        ]
+    },
+    {
+        "id":  14,
+        "Group": 1,
+        "Code": "Solana USD",
+        "Description": "Solana/USD quotes SOL price in US dollars; high-throughput blockchain token for trading, staking, DeFi exposure, hedging dollar risk.",
+        "News": [
+            "Solana",
+            "SOL",
+            "USD",
+            "US dollar"
+        ]
+    },
+    {
+        "id":  15,
+        "Group": 0,
+        "Code": "USDC USD",
+        "Description": "USDC/USD quotes Circle’s USDC stablecoin to US dollars; typically 1:1 peg for trading, payments, settlements.",
+        "News": [
+            "USDC",
+            "Circle",
+            "Stablecoin",
+            "USD",
+            "US dollar"
+        ]
+    },
+    {
+        "id":  16,
+        "Group": 0,
+        "Code": "Tether USDt USD",
+        "Description": "Tether/USDT USD quotes tether’s dollar stablecoin; aims 1:1 peg, used for trading, liquidity, settlements.",
+        "News": [
+            "USDT",
+            "Tether",
+            "Stablecoin",
+            "USD",
+            "US dollar"
+        ]
+    },
+    {
+        "id":  17,
+        "Group": 0,
+        "Code": "Monero GBP",
+        "Description": "Monero/GBP quotes XMR price in British pounds; privacy coin traded on UK exchanges for hedging and anonymity.",
+        "News": [
+            "XMR",
+            "Monero",
+            "GBP",
+            "Pound",
+            "British pound",
+            "UK",
+            "Sterling"
+        ]
+    },
+    {
+        "id":  18,
+        "Group": 0,
+        "Code": "Monero USD",
+        "Description": "Monero/USD quotes XMR price in US dollars; privacy coin enabling anonymous payments, trading, hedging dollar exposure.",
+        "News": [
+            "XMR",
+            "Monero",
+            "USD",
+            "US dollar"
+        ]
+    },
+    {
+        "id":  19,
+        "Group": 1,
+        "Code": "XRP CAD",
+        "Description": "XRP/CAD quotes XRP price in Canadian dollars; used for trading, remittances, arbitrage, hedging Canadian exposure.",
+        "News": [
+            "XRP",
+            "CAD",
+            "Canadian dollar"
+        ]
+    },
+    {
+        "id":  20,
+        "Group": 0,
+        "Code": "XRP EUR",
+        "Description": "XRP/EUR quotes XRP price in euros; used for trading, remittances, hedging euro exposure on major European exchanges.",
+        "News": [
+            "XRP",
+            "Euro",
+            "EUR"
+        ]
+    },
+    {
+        "id":  21,
+        "Group": 0,
+        "Code": "XRP GBP",
+        "Description": "XRP/GBP quotes XRP price in British pounds; used for trading, remittances, hedging sterling exposure.",
+        "News": [
+            "XRP",
+            "GBP",
+            "Pound",
+            "British pound",
+            "UK",
+            "Sterling"
+        ]
+    },
+    {
+        "id":  22,
+        "Group": 0,
+        "Code": "XRP USD",
+        "Description": "XRP/USD quotes Ripple's XRP price in US dollars; used for trading, remittances, arbitrage, hedging dollar exposure.",
+        "News": [
+            "XRP",
+            "USD",
+            "US dollar"
+        ]
+    },
+    {
+        "id":  23,
+        "Group": 0,
+        "Code": "GBP/CHF",
+        "Description": "GBP/CHF = British Pound vs. Swiss Franc. It's a forex pair showing how many CHF per GBP",
+        "News": [
+            "GBP",
+            "Pound",
+            "British pound",
+            "UK",
+            "Sterling",
+            "CHF",
+            "Swiss Franc"
+        ]
+    },
+    {
+        "id":  24,
+        "Group": 2,
+        "Code": "EUR/CAD",
+        "Description": "EUR/CAD = Euro versus Canadian Dollar. Shows how many CAD one Euro buys.",
+        "News": [
+            "Euro",
+            "EUR",
+            "CAD",
+            "Canadian dollar",
+            "Canada"
+        ]
+    },
+    {
+        "id":  25,
+        "Group": 2,
+        "Code": "EUR/CHF",
+        "Description": "EUR/CHF = Euro versus Swiss Franc. Indicates how many CHF one Euro buys.",
+        "News": [
+            "Euro",
+            "EUR",
+            "CHF",
+            "Swiss Franc",
+            "Switzerland"
+        ]
+    },
+    {
+        "id":  26,
+        "Group": 2,
+        "Code": "EUR/HUF",
+        "Description": "EUR/HUF = Euro vs. Hungarian Forint. Shows how many HUF one Euro buys.",
+        "News": [
+            "Euro",
+            "EUR",
+            "Hungarian Forint",
+            "HUF",
+            "Hungary"
+        ]
+    },
+    {
+        "id":  27,
+        "Group": 2,
+        "Code": "EUR/JPY",
+        "Description": "EUR/JPY = Euro vs. Japanese Yen. Indicates how many Yen one Euro buys.",
+        "News": [
+            "Euro",
+            "EUR",
+            "JPY",
+            "Japanese Yen",
+            "Yen",
+            "Japan"
+        ]
+    },
+    {
+        "id":  28,
+        "Group": 2,
+        "Code": "EUR/SEK",
+        "Description": "EUR/SEK = Euro vs. Swedish Krona. Shows how many SEK one Euro buys.",
+        "News": [
+            "Euro",
+            "EUR",
+            "Swedish Krona",
+            "Sweden",
+            "SEK"
+        ]
+    },
+    {
+        "id":  29,
+        "Group": 2,
+        "Code": "EUR/USD",
+        "Description": "EUR/USD = Euro vs. US Dollar. Indicates how many USD one Euro buys.",
+        "News": [
+            "Euro",
+            "EUR",
+            "USD",
+            "US dollar"
+        ]
+    },
+    {
+        "id":  30,
+        "Group": 2,
+        "Code": "GBP/AUD",
+        "Description": "GBP/AUD = British Pound vs. Australian Dollar. Shows how many AUD one GBP buys.",
+        "News": [
+            "GBP",
+            "Pound",
+            "British pound",
+            "UK",
+            "Sterling",
+            "Australian Dollar",
+            "AUD",
+            "Australia"
+        ]
+    },
+    {
+        "id":  31,
+        "Group": 2,
+        "Code": "GBP/BRL",
+        "Description": "GBP/BRL = British Pound vs. Brazilian Real. Indicates how many BRL one GBP buys.",
+        "News": [
+            "GBP",
+            "Pound",
+            "British pound",
+            "UK",
+            "Sterling",
+            "Brazilian Real",
+            "BRL",
+            "Brazil"
+        ]
+    },
+    {
+        "id":  32,
+        "Group": 2,
+        "Code": "GBP/CAD",
+        "Description": "GBP/CAD = British Pound vs. Canadian Dollar. Shows how many CAD one GBP buys.",
+        "News": [
+            "GBP",
+            "Pound",
+            "British pound",
+            "UK",
+            "Sterling",
+            "CAD",
+            "Canadian dollar",
+            "Canada"
+        ]
+    },
+    {
+        "id":  33,
+        "Group": 2,
+        "Code": "GBP/CHF",
+        "Description": "GBP/CHF = British Pound vs. Swiss Franc. Indicates how many CHF one GBP buys.",
+        "News": [
+            "GBP",
+            "Pound",
+            "British pound",
+            "UK",
+            "Sterling",
+            "CHF",
+            "Swiss Franc",
+            "Switzerland"
+        ]
+    },
+    {
+        "id":  34,
+        "Group": 2,
+        "Code": "GBP/CNY",
+        "Description": "GBP/CNY = British Pound vs. Chinese Yuan. Shows how many CNY one GBP buys.",
+        "News": [
+            "GBP",
+            "Pound",
+            "British pound",
+            "UK",
+            "Sterling",
+            "Chinese Yuan",
+            "Yuan",
+            "China"
+        ]
+    },
+    {
+        "id":  35,
+        "Group": 2,
+        "Code": "GBP/EUR",
+        "Description": "GBP/EUR = British Pound vs. Euro. Indicates how many Euros one GBP buys.",
+        "News": [
+            "GBP",
+            "Pound",
+            "British pound",
+            "UK",
+            "Sterling",
+            "Euro",
+            "EUR"
+        ]
+    },
+    {
+        "id":  36,
+        "Group": 2,
+        "Code": "GBP/INR",
+        "Description": "GBP/INR = British Pound vs. Indian Rupee. Shows how many INR one GBP buys.",
+        "News": [
+            "GBP",
+            "Pound",
+            "British pound",
+            "UK",
+            "Sterling",
+            "Indian Rupee",
+            "INR",
+            "India"
+        ]
+    },
+    {
+        "id":  37,
+        "Group": 2,
+        "Code": "GBP/JPY",
+        "Description": "GBP/JPY = British Pound vs. Japanese Yen. Shows how many Yen one GBP buys.",
+        "News": [
+            "GBP",
+            "Pound",
+            "British pound",
+            "UK",
+            "Sterling",
+            "Japanese Yen",
+            "JPY",
+            "Japan"
+        ]
+    },
+    {
+        "id":  38,
+        "Group": 2,
+        "Code": "GBP/NOK",
+        "Description": "GBP/NOK = British Pound vs. Norwegian Krone. Shows how many NOK one GBP buys.",
+        "News": [
+            "GBP",
+            "Pound",
+            "British pound",
+            "UK",
+            "Sterling",
+            "Norwegian Krone",
+            "NOK",
+            "Norway"
+        ]
+    },
+    {
+        "id":  39,
+        "Group": 2,
+        "Code": "GBP/QAR",
+        "Description": "GBP/QAR = British Pound vs. Qatari Riyal. Shows how many QAR one GBP buys.",
+        "News": [
+            "GBP",
+            "Pound",
+            "British pound",
+            "UK",
+            "Sterling",
+            "Qatari Riyal",
+            "QAR",
+            "Quatar"
+        ]
+    },
+    {
+        "id":  40,
+        "Group": 0,
+        "Code": "GBP/USD",
+        "Description": "GBP/USD = British Pound vs. US Dollar. Indicates how many USD one GBP buys.",
+        "News": [
+            "GBP",
+            "Pound",
+            "British pound",
+            "UK",
+            "Sterling",
+            "US Dollar",
+            "USD"
+        ]
+    },
+    {
+        "id":  41,
+        "Group": 2,
+        "Code": "GBP/ZAR",
+        "Description": "GBP/ZAR = British Pound vs. South African Rand. Shows how many ZAR one GBP buys.",
+        "News": [
+            "GBP",
+            "Pound",
+            "British pound",
+            "UK",
+            "Sterling",
+            "South African Rand",
+            "ZAR",
+            "South Africa"
+        ]
+    },
+    {
+        "id":  42,
+        "Group": 2,
+        "Code": "USD/CAD",
+        "Description": "USD/CAD = US Dollar vs. Canadian Dollar. Shows how many CAD one USD buys.",
+        "News": [
+            "US Dollar",
+            "USD",
+            "Canadian Dollar",
+            "CAD",
+            "Canada"
+        ]
+    },
+    {
+        "id":  43,
+        "Group": 2,
+        "Code": "CAD/XDR",
+        "Description": "CAD/XDR = Canadian Dollar vs. IMF’s Special Drawing Rights (XDR). Shows CAD value in XDR",
+        "News": [
+            "Canadian Dollar",
+            "CAD",
+            "IMF"
+        ]
+    },
+    {
+        "id":  44,
+        "Group": 2,
+        "Code": "CAD/XAF",
+        "Description": "CAD/XAF = Canadian Dollar vs. Central African CFA Franc. Shows how many XAF one CAD buys.",
+        "News": [
+            "Canadian Dollar",
+            "CAD",
+            "Central African CFA Franc",
+            "XAF",
+            "Africa"
+        ]
+    },
+    {
+        "id":  45,
+        "Group": 2,
+        "Code": "CAD/XOF",
+        "Description": "CAD/XOF = Canadian Dollar vs. West African CFA Franc. Shows how many XOF one CAD buys.",
+        "News": [
+            "Canadian Dollar",
+            "CAD",
+            "West African CFA Franc",
+            "XOF"
+        ]
+    },
+    {
+        "id":  46,
+        "Group": 2,
+        "Code": "CAD/XCU",
+        "Description": "CAD/XCU = Canadian Dollar vs. Copper unit. Not a standard FX pair; likely commodity pricing.",
+        "News": [
+            "Canadian Dollar",
+            "CAD",
+            "XCU",
+            "Copper"
+        ]
+    },
+    {
+        "id":  47,
+        "Group": 2,
+        "Code": "CAD/XPF",
+        "Description": "CAD/v = Canadian Dollar vs. CFP Franc. Shows how many XPF one CAD buys.",
+        "News": [
+            "Canadian Dollar",
+            "CAD",
+            "CFP Franc",
+            "XPF"
+        ]
+    },
+    {
+        "id":  48,
+        "Group": 2,
+        "Code": "CAD/XCD",
+        "Description": "CAD/XCD = Canadian Dollar vs. East Caribbean Dollar. Shows how many XCD one CAD buys.",
+        "News": [
+            "Canadian Dollar",
+            "CAD",
+            "East Caribbean Dollar",
+            "XCD"
+        ]
+    },
+    {
+        "id":  49,
+        "Group": 2,
+        "Code": "CAD/XCG",
+        "Description": "CAD/XCG = Canadian Dollar vs. East Caribbean Guilder. Shows how many XCG one CAD buys.",
+        "News": [
+            "Canadian Dollar",
+            "CAD",
+            "East Caribbean Guilder",
+            "XCG"
+        ]
+    },
+    {
+        "id":  50,
+        "Group": 2,
+        "Code": "USD/CHF",
+        "Description": "USD/CHF = US Dollar vs. Swiss Franc. Shows how many CHF one USD buys.",
+        "News": [
+            "USD",
+            "US Dollar",
+            "CHF",
+            "Swiss Franc"
+        ]
+    },
+    {
+        "id":  51,
+        "Group": 2,
+        "Code": "CHF/XDR",
+        "Description": "CHF/XDR = Swiss Franc vs. IMF Special Drawing Rights. Shows how many XDR one CHF buys.",
+        "News": [
+            "CHF",
+            "Swiss Franc",
+            "IMF"
+        ]
+    },
+    {
+        "id":  52,
+        "Group": 2,
+        "Code": "CHF/XCD",
+        "Description": "CHF/XCD = Swiss Franc vs. East Caribbean Dollar. Shows how many XCD one CHF buys.",
+        "News": [
+            "CHF",
+            "Swiss Franc",
+            "East Caribbean Dollar",
+            "XCD"
+        ]
+    },
+    {
+        "id":  53,
+        "Group": 2,
+        "Code": "CHF/XOF",
+        "Description": "CHF/XOF = Swiss Franc vs. West African CFA Franc. Shows how many XOF one CHF buys.",
+        "News": [
+            "CHF",
+            "Swiss Franc",
+            "West African CFA Franc",
+            "XOF"
+        ]
+    },
+    {
+        "id":  54,
+        "Group": 2,
+        "Code": "CHF/XPF",
+        "Description": "CHF/XPF = Swiss Franc vs. CFP Franc. Shows how many XPF one CHF buys.",
+        "News": [
+            "CHF",
+            "Swiss Franc",
+            "CFP Franc",
+            "XPF"
+        ]
+    },
+    {
+        "id":  55,
+        "Group": 2,
+        "Code": "CHF/XAF",
+        "Description": "CHF/XAF = Swiss Franc vs. Central African CFA Franc. Shows how many XAF one CHF buys.",
+        "News": [
+            "CHF",
+            "Swiss Franc",
+            "Central African CFA Franc",
+            "XAF"
+        ]
+    },
+    {
+        "id":  56,
+        "Group": 2,
+        "Code": "CHF/XCG",
+        "Description": "CHF/XCG = Swiss Franc vs. East Caribbean Guilder. Shows how many XCG one CHF buys.",
+        "News": [
+            "CHF",
+            "Swiss Franc",
+            "East Caribbean Guilder",
+            "XCG"
+        ]
+    },
+    {
+        "id":  57,
+        "Group": 2,
+        "Code": "USD/CNY",
+        "Description": "USD/CNY = US Dollar vs. Chinese Yuan. Shows how many CNY one USD buys.",
+        "News": [
+            "US Dollar",
+            "USD",
+            "Chinese Yuan",
+            "CNY"
+        ]
+    },
+    {
+        "id":  58,
+        "Group": 2,
+        "Code": "CNY/XDR",
+        "Description": "CNY/XDR = Chinese Yuan vs. IMF Special Drawing Rights. Shows how many XDR one CNY buys.",
+        "News": [
+            "Chinese Yuan",
+            "CNY",
+            "IMF"
+        ]
+    },
+    {
+        "id":  59,
+        "Group": 2,
+        "Code": "CNY/XCU",
+        "Description": "CNY/XCU = Chinese Yuan vs. Copper. Not a standard pair; XCU is a commodity.",
+        "News": [
+            "Chinese Yuan",
+            "CNY",
+            "Copper"
+        ]
+    },
+    {
+        "id":  60,
+        "Group": 0,
+        "Code": "USD/GBP",
+        "Description": "USD/GBP = US Dollar vs. British Pound. Shows how many GBP one USD buys.",
+        "News": [
+            "British Pound",
+            "GBP",
+            "US Dollar",
+            "USD"
+        ]
+    },
+    {
+        "id":  61,
+        "Group": 2,
+        "Code": "GBP/XOF",
+        "Description": "GBP/XOF = British Pound vs. West African CFA Franc. Shows how many XOF one GBP buys.",
+        "News": [
+            "British Pound",
+            "GBP",
+            "West African CFA Franc",
+            "XOF"
+        ]
+    },
+    {
+        "id":  62,
+        "Group": 2,
+        "Code": "GBP/XDR",
+        "Description": "GBP/XDR = British Pound vs. IMF Special Drawing Rights. Shows how many XDR one GBP buys.",
+        "News": [
+            "British Pound",
+            "GBP",
+            "IMF"
+        ]
+    },
+    {
+        "id":  63,
+        "Group": 2,
+        "Code": "GBP/XPF",
+        "Description": "GBP/XPF = British Pound vs. CFP Franc French overseas. Shows how many XPF one GBP buys.",
+        "News": [
+            "British Pound",
+            "GBP",
+            "CFP Franc",
+            "XPF"
+        ]
+    },
+    {
+        "id":  64,
+        "Group": 2,
+        "Code": "GBP/XCD",
+        "Description": "GBP/XCD = British Pound vs. East Caribbean Dollar. Shows how many XCD one GBP buys.",
+        "News": [
+            "British Pound",
+            "GBP",
+            "East Caribbean Dollar",
+            "XCD"
+        ]
+    },
+    {
+        "id":  65,
+        "Group": 2,
+        "Code": "GBP/XCU",
+        "Description": "GBP/XCU = British Pound vs. Copper. Not a standard pair; XCU represents a commodity.",
+        "News": [
+            "British Pound",
+            "GBP",
+            "Copper"
+        ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "id":  0,
+        "Group": 1,
+        "Code": "",
+        "Description": "",
+        "News": [
+            "",
+            "",
+            "",
+            ""
+        ]
+    }
+
+]

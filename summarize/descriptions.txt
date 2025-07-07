@@ -1,0 +1,857 @@
+Cardano
+Cardano is a cryptocurrency with PoS blockchain cryptocurrency; ADA token powers fees, staking, governance, smart contracts, DeFi, NFTs, identity, supply-chain.
+
+Cardano USD
+Cardano’s ADA trades versus USD; proof-of-stake blockchain token used for fees, staking, governance.
+
+BNB
+BNB is cryptocurrency Binance’s native exchange token; used for trading fee discounts, gas on BSC, staking, governance, payments.
+
+BNB USD
+BNB/USD shows Binance Coin’s price in US dollars; token powers Binance ecosystem, fees, staking, governance.
+
+Bitcoin
+Bitcoin is decentralized cryptocurrency; used for store-of-value, payments, remittances, trading, hedging, censorship-resistant transfers.
+
+Bitcoin CAD
+Bitcoin/CAD Bitcoin’s value in Canadian dollars; popular on Canadian exchanges for trading, arbitrage, hedging exposure, risk management.
+
+Bitcoin EUR
+Bitcoin/EUR denotes BTC priced in euros; used for trading, arbitrage, hedging euro exposure, widely listed on exchanges.
+
+Bitcoin GBP
+Bitcoin/GBP shows BTC price in British pounds; used for trading, arbitrage, hedging sterling exposure on UK exchanges.
+
+Bitcoin USD
+Bitcoin/USD quotes Bitcoin price in US dollars; primary benchmark for trading, settlement, arbitrage, risk management.
+
+Conflux
+Conflux is a high-throughput Chinese layer-1 blockchain cryptocurrency; CFX token powers transactions, staking, governance, cross-chain assets.
+
+Conflux USD
+Conflux/USD quotes CFX price in US dollars; layer-1 blockchain token for transactions, staking, governance, cross-chain interoperability.
+
+Dogecoin
+Dogecoin is a meme-origin cryptocurrency using proof-of-work; used for tipping, micro-payments, speculative trading.
+
+Dogecoin USD
+Dogecoin/USD shows DOGE price in US dollars; meme-origin coin used for tipping, payments, trading, hedging exposure.
+
+Ethereum
+Ethereum is a programmable blockchain cryptocurrency; ETH token powers gas fees, staking, DeFi, NFTs, smart contracts.
+
+Ethereum CAD
+Ethereum/CAD quotes ETH price in Canadian dollars; common on Canadian exchanges for trading, hedging exposure.
+
+Ethereum EUR
+Ethereum/EUR quotes ETH price in euros; used for trading, arbitrage, staking yields, hedging euro exposure.
+
+Ethereum GBP
+Ethereum/GBP quotes ETH price in British pounds; used on UK exchanges for trading, hedging sterling exposure.
+
+Ethereum USD
+Ethereum/USD quotes ETH price in US dollars; main benchmark pair for trading, settlement, arbitrage, DeFi pricing.
+
+Pepe
+PEPE is a meme-based token cryptocurrency; speculative trading, community-driven hype, minimal inherent utility.
+
+Pepe USD
+Pepe/USD shows PEPE meme-token's USD price; ERC-20 frog-inspired coin, purely speculative, traded on exchanges, DEX liquidity pools.
+
+Solana
+Solana is high-speed proof-of-stake blockchain cryptocurrency; SOL token enables fees, staking, DeFi, NFTs.
+
+Solana USD
+Solana/USD quotes SOL price in US dollars; high-throughput blockchain token for trading, staking, DeFi exposure, hedging dollar risk.
+
+USDC
+USDC is Circle’s dollar-backed stablecoin; 1:1 USD peg for trading, DeFi, payments.
+
+USDC USD
+USDC/USD quotes Circle’s USDC stablecoin to US dollars; typically 1:1 peg for trading, payments, settlements.
+
+Tether USDT
+USDT is Tether’s dollar-pegged stablecoin; maintains 1:1 USD reserves; used for trading, liquidity, payments.
+
+Tether USDt USD
+Tether/USDT USD quotes tether’s dollar stablecoin; aims 1:1 peg, used for trading, liquidity, settlements.
+
+Monero
+Monero is a privacy-focused cryptocurrency; XMR enables anonymous digital cash via ring signatures, stealth addresses, bulletproofs.
+
+Monero GBP
+Monero/GBP quotes XMR price in British pounds; privacy coin traded on UK exchanges for hedging and anonymity.
+
+Monero USD
+Monero/USD quotes XMR price in US dollars; privacy coin enabling anonymous payments, trading, hedging dollar exposure.
+
+XRP
+XRP is semi-centralized ledger token cryptocurrency; used for instant cross-border transfers, on-demand liquidity, remittances, bridging currencies.
+
+XRP CAD
+XRP/CAD quotes XRP price in Canadian dollars; used for trading, remittances, arbitrage, hedging Canadian exposure.
+
+XRP EUR
+XRP/EUR quotes XRP price in euros; used for trading, remittances, hedging euro exposure on major European exchanges.
+
+XRP CAD
+XRP/CAD shows XRP's value in Canadian dollars; used on exchanges for trading, remittance paths, and hedging CAD exposure.
+
+XRP EUR
+XRP/EUR denotes Ripple's XRP price in euros; used for trades, remittances, hedging euro risk.
+
+XRP GBP
+XRP/GBP quotes XRP price in British pounds; used for trading, remittances, hedging sterling exposure.
+
+XRP USD
+XRP/USD quotes Ripple's XRP price in US dollars; used for trading, remittances, arbitrage, hedging dollar exposure.
+
+GBP
+GBP is British Pound Sterling, the UK official currency, used for legal tender, settlement currency, reserve asset, reference in FX markets, pricing exports, bonds, trade invoicing.
+
+GBP/CHF
+GBP/CHF = British Pound vs. Swiss Franc. It's a forex pair showing how many CHF per GBP
+
+EUR
+Euro is official currency of 20 Eurozone countries used for payments, pricing goods/services, reserve currency, trade invoicing, FX trading, monetary policy.
+
+CAD
+CAD is Canadian dollar; used as Canada’s legal tender for payments, pricing goods/services, savings; active in FX markets, reserve currency.
+
+EUR/CAD
+EUR/CAD = Euro versus Canadian Dollar. Shows how many CAD one Euro buys.
+
+CHF
+CHF is Swiss franc; used as Switzerland’s legal tender, pricing, savings; active in FX markets, reserve currency.
+
+EUR/CHF
+EUR/CHF = Euro versus Swiss Franc. Indicates how many CHF one Euro buys.
+
+HUF
+HUF is Hungarian Forint; used as Hungary’s legal tender for Hungary payments, Hungary pricing, Hungary savings, Hungary central bank policy indicator.
+
+EUR/HUF
+EUR/HUF = Euro vs. Hungarian Forint. Shows how many HUF one Euro buys.
+
+JPY
+JPY is Japanese yen; used as Japan’s legal tender, trade invoicing, FX reserve currency, carry-trade funding, and safe-haven asset.
+
+EUR/JPY
+EUR/JPY = Euro vs. Japanese Yen. Indicates how many Yen one Euro buys.
+
+SEK
+SEK is Sweden’s legal tender, used in payments, pricing, Sweden savings; active in FX markets and Sweden monetary policy.
+
+EUR/SEK
+EUR/SEK = Euro vs. Swedish Krona. Shows how many SEK one Euro buys.
+
+USD
+USD: United States dollar, global reserve currency; used for settlements, trade invoicing, FX trading, pricing commodities.
+
+EUR/USD
+EUR/USD = Euro vs. US Dollar. Indicates how many USD one Euro buys.
+
+AUD
+AUD is the Australian dollar; used as legal tender, payments, commodity pricing, savings; active in FX markets, carry-trade funding, reserve currency.
+
+GBP/AUD
+GBP/AUD = British Pound vs. Australian Dollar. Shows how many AUD one GBP buys.
+
+BRL
+BRL is Brazilian real; used as Brazil’s legal tender for payments, pricing, savings, and FX trading.
+
+GBP/BRL
+GBP/BRL = British Pound vs. Brazilian Real. Indicates how many BRL one GBP buys.
+
+GBP/CAD
+GBP/CAD = British Pound vs. Canadian Dollar. Shows how many CAD one GBP buys.
+
+GBP/CHF
+GBP/CHF = British Pound vs. Swiss Franc. Indicates how many CHF one GBP buys.
+
+CNY
+CNY is Chinese yuan; used as China’s legal tender, trade invoicing, FX reserves, pricing exports, monetary policy tool, and international settlement currency.
+
+GBP/CNY
+GBP/CNY = British Pound vs. Chinese Yuan. Shows how many CNY one GBP buys.
+
+GBP/EUR
+GBP/EUR = British Pound vs. Euro. Indicates how many Euros one GBP buys.
+
+INR
+INR is the Indian rupee; used as India’s legal tender for payments, pricing, savings; active in FX markets.
+
+GBP/INR
+GBP/INR = British Pound vs. Indian Rupee. Shows how many INR one GBP buys.
+
+GBP/JPY
+GBP/JPY = British Pound vs. Japanese Yen. Shows how many Yen one GBP buys.
+
+NOK
+NOK is Norwegian krone; Norway’s legal tender for payments, pricing, savings; active in FX markets.
+
+GBP/NOK
+GBP/NOK = British Pound vs. Norwegian Krone. Shows how many NOK one GBP buys.
+
+QAR
+QAR is Qatari Riyal; used as Qatar’s legal tender for payments, oil pricing, savings; active in FX markets.
+
+GBP/QAR
+GBP/QAR = British Pound vs. Qatari Riyal. Shows how many QAR one GBP buys.
+
+GBP/USD
+GBP/USD = British Pound vs. US Dollar. Indicates how many USD one GBP buys.
+
+ZAR
+ZAR is South African rand; used as legal tender, payments, pricing, savings; active FX, emerging market currency.
+
+GBP/ZAR
+GBP/ZAR = British Pound vs. South African Rand. Shows how many ZAR one GBP buys.
+
+USD/CAD
+USD/CAD = US Dollar vs. Canadian Dollar. Shows how many CAD one USD buys.
+
+XDR
+XDR is IMF’s Special Drawing Rights, an international reserve asset weighted by member currencies, used in SDR allocations and IMF transactions.
+
+CAD/XDR
+CAD/XDR = Canadian Dollar vs. IMF’s Special Drawing Rights (XDR). Shows CAD value in XDR.
+
+XAF
+XAF is Central African CFA franc; legal tender in six CEMAC countries; pegged to EUR; used for payments, savings, regional trade.
+
+CAD/XAF
+CAD/XAF = Canadian Dollar vs. Central African CFA Franc. Shows how many XAF one CAD buys.
+
+XOF
+XOF is West African CFA franc; legal tender in eight UEMOA countries; pegged to EUR; used for payments, trade, savings.
+
+CAD/XOF
+CAD/XOF = Canadian Dollar vs. West African CFA Franc. Shows how many XOF one CAD buys.
+
+XCU
+XCU is the code for a metric ton of copper in commodity markets; used for pricing, trading, and reporting copper futures and spot contracts.
+
+CAD/XCU
+CAD/XCU = Canadian Dollar vs. Copper unit. Not a standard FX pair; likely commodity pricing.
+
+XPF
+XPF is the code for CFP Franc, legal tender in French Pacific territories; pegged to EUR for payments and FX transactions.
+
+CAD/XPF
+CAD/XPF = Canadian Dollar vs. CFP Franc. Shows how many XPF one CAD buys.
+
+XCD
+XCD is the East Caribbean Dollar; legal tender in eight ECCU countries; pegged to USD; used for payments, trade, savings.
+
+CAD/XCD
+CAD/XCD = Canadian Dollar vs. East Caribbean Dollar. Shows how many XCD one CAD buys.
+
+XCG
+XCG is the ISO code for the Caribbean guilder, used in Curaçao and Sint Maarten
+
+CAD/XCG
+CAD/XCG = Canadian Dollar vs. East Caribbean Guilder. Shows how many XCG one CAD buys.
+
+USD/CHF
+USD/CHF = US Dollar vs. Swiss Franc. Shows how many CHF one USD buys.
+
+CHF/XDR
+CHF/XDR = Swiss Franc vs. IMF Special Drawing Rights. Shows how many XDR one CHF buys.
+
+CHF/XCD
+CHF/XCD = Swiss Franc vs. East Caribbean Dollar. Shows how many XCD one CHF buys.
+
+CHF/XOF
+CHF/XOF = Swiss Franc vs. West African CFA Franc. Shows how many XOF one CHF buys.
+
+CHF/XPF
+CHF/XPF = Swiss Franc vs. CFP Franc. Shows how many XPF one CHF buys.
+
+CHF/XCU
+CHF/XCU = Swiss Franc vs. Copper. Not a standard pair; XCU is a commodity.
+
+CHF/XAF
+CHF/XAF = Swiss Franc vs. Central African CFA Franc. Shows how many XAF one CHF buys.
+
+CHF/XCG
+CHF/XCG = Swiss Franc vs. East Caribbean Guilder. Shows how many XCG one CHF buys.
+
+USD/CNY
+USD/CNY = US Dollar vs. Chinese Yuan. Shows how many CNY one USD buys.
+
+CNY/XDR
+CNY/XDR = Chinese Yuan vs. IMF Special Drawing Rights. Shows how many XDR one CNY buys.
+
+CNY/XCU
+CNY/XCU = Chinese Yuan vs. Copper. Not a standard pair; XCU is a commodity.
+
+USD/GBP
+USD/GBP = US Dollar vs. British Pound. Shows how many GBP one USD buys.
+
+GBP/XOF
+GBP/XOF = British Pound vs. West African CFA Franc. Shows how many XOF one GBP buys.
+
+GBP/XDR
+GBP/XDR = British Pound vs. IMF Special Drawing Rights. Shows how many XDR one GBP buys.
+
+GBP/XPF
+GBP/XPF = British Pound vs. CFP Franc French overseas. Shows how many XPF one GBP buys.
+
+GBP/XCD
+GBP/XCD = British Pound vs. East Caribbean Dollar. Shows how many XCD one GBP buys.
+
+GBP/XCU
+GBP/XCU = British Pound vs. Copper. Not a standard pair; XCU represents a commodity.
+
+GBP/XAF
+GBP/XAF = British Pound vs. Central African CFA Franc. Shows how many XAF one GBP buys.
+
+GBP/XCG
+GBP/XCG = British Pound vs. East Caribbean Guilder. Shows how many XCG one GBP buys.
+
+USD/INR
+USD/INR = US Dollar vs. Indian Rupee. Shows how many INR one USD buys.
+
+INR/XDR
+INR/XDR = Indian Rupee vs. IMF Special Drawing Rights. Shows how many XDR one INR buys.
+
+INR/XCU
+INR/XCU = Indian Rupee vs. Copper. Not a standard pair; XCU denotes a commodity.
+
+USD/JPY
+USD/JPY = US Dollar vs. Japanese Yen. Shows how many JPY one USD buys.
+
+JPY/XDR
+JPY/XDR = Japanese Yen vs. IMF Special Drawing Rights. Shows how many XDR one JPY buys.
+
+JPY/XPF
+JPY/XPF = Japanese Yen vs. CFP Franc. Shows how many XPF one JPY buys.
+
+JPY/XAF
+JPY/XAF = Japanese Yen vs. Central African CFA Franc. Shows how many XAF one JPY buys.
+
+JPY/XOF
+JPY/XOF = Japanese Yen vs. West African CFA Franc. Shows how many XOF one JPY buys.
+
+JPY/XCU
+JPY/XCU = Japanese Yen vs. Copper. Not a standard pair; XCU is a commodity.
+
+JPY/XCD
+JPY/XCD = Japanese Yen vs. East Caribbean Dollar. Shows how many XCD one JPY buys.
+
+JPY/XCG
+JPY/XCG = Japanese Yen vs. East Caribbean Guilder. Shows how many XCG one JPY buys.
+
+USD/RUB
+USD/RUB = US Dollar vs. Russian Ruble. Shows how many RUB one USD buys.
+
+RUB/XDR
+RUB/XDR = Russian Ruble vs. IMF Special Drawing Rights. Shows how many XDR one RUB buys.
+
+RUB
+RUB is Russian ruble; used as Russia’s legal tender, Russian payments, oil pricing, Russian savings; active in FX markets and reserves.
+
+RUB/XCU
+RUB/XCU = Russian Ruble vs. Copper. Not a valid pair; XCU is a commodity.
+
+UAH
+UAH is Ukrainian hryvnia; used as Ukraine’s legal tender for payments, pricing goods, Ukraine savings; traded in FX markets.
+
+USD/UAH
+USD/UAH = US Dollar vs. Ukrainian Hryvnia. Shows how many UAH one USD buys.
+
+Brent Crude Oil
+Brent Crude Oil is a global benchmark for oil prices, sourced from the North Sea.
+
+Live Cattle
+Live Cattle raised for beef production, sold before slaughter, traded futures contracts.
+
+Cocoa
+Cocoa commodity cacao beans, chocolate; traded futures contracts.
+
+Coffee
+Coffee commodity beans, global markets, especially Arabica and Robusta varieties.
+
+Copper
+Copper key industrial commodity construction, power, electronics; traded global futures spot markets.
+
+Corn
+Corn major agricultural commodity food, feed, and biofuel; widely traded in global futures markets.
+
+Cotton
+Cotton is a soft fiber commodity used in textiles; globally traded in futures for hedging and speculation.
+
+Natural Gas
+Natural gas is a fossil fuel commodity used for heating, electricity, and industry; traded on global energy markets.
+
+Gold
+Gold is a precious metal commodity used for jewelry, investment, and reserves; traded globally in futures and spot markets.
+
+Lean Hogs
+Lean Hogs are futures contracts for pork production, used to hedge or speculate on hog prices in livestock markets.
+
+Oat
+Oat is an agricultural commodity used for food and livestock feed; traded in futures markets for price risk management.
+
+Crude Oil
+Crude Oil is an unrefined fossil fuel, essential for energy production; traded globally via futures and spot markets.
+
+Orange Juice
+Orange Juice is a soft commodity from oranges, traded as frozen concentrate futures, mainly on U.S. exchanges.
+
+Silver
+Silver is a precious metal commodity used in industry, jewelry, and investment; traded globally in futures and spot markets.
+
+Micro Silver
+Micro Silver futures are smaller-sized silver contracts, allowing smaller investors to trade silver commodity exposure.
+
+E-mini Silver
+E-mini Silver futures are electronically traded, smaller silver contracts for more accessible market participation.
+
+Soybean
+Soybean is a major agricultural commodity used for food, oil, and animal feed; traded on global futures markets.
+
+Sugar
+Sugar is a global agricultural commodity derived from sugarcane or beet; traded in futures markets for price risk management.
+
+KC HRW Wheat
+KC HRW Wheat is Hard Red Winter wheat, a U.S. commodity traded on Kansas City exchange for baking quality.
+
+Feeder Cattle
+Feeder Cattle are young cattle raised for beef; futures contracts hedge or speculate on their price changes.
+
+000001.SS
+000001.SS is the Shanghai Composite Index, tracking all Shanghai Stock Exchange A and B shares.
+
+MSCI EUROPE
+MSCI Europe Index tracks large and mid cap equities across 15 developed European markets.
+
+ALL ORDINARIES [XAO]
+All Ordinaries (XAO) tracks Australia’s 500 largest ASX-listed companies, broad benchmark of market performance.
+
+S&P/ASX 200 [XJO]
+S&P/ASX 200 (XJO) tracks 200 largest ASX-listed stocks, benchmark for Australian equity market performance.
+
+BEL 20
+BEL 20 is Belgium’s blue-chip stock index, tracking 20 major Euronext Brussels companies, serving as national market benchmark.
+
+S&P BSE SENSEX
+S&P BSE SENSEX: India’s flagship index tracking 30 large BSE-listed companies; primary benchmark for Indian equities.
+
+^BUK100P
+BUK100P is Cboe UK 100 price-return index, tracking 100 largest UK companies, similar to FTSE 100.
+
+IBOVESPA
+Ibovespa is Brazil’s primary equity index, tracking about 80 large, liquid B3-listed stocks.
+
+S&P/B3 Ibovespa VIX
+Ibovespa VIX measures expected volatility of Brazil’s Ibovespa via S&P/B3 options, analogous to U.S. VIX.
+
+EGX 30 Price Return Index
+EGX 30 Price Return Index tracks 30 largest liquid Egyptian Exchange stocks; benchmark measure of Cairo market.
+
+Dow Jones Industrial Average
+Dow Jones Industrial Average tracks 30 large U.S. blue-chip stocks; key benchmark of American equity market performance.
+
+Dow Jones Internet Composite To
+Dow Jones Internet Composite tracks U.S. internet stocks, cap-weighted benchmark for online-sector performance.
+
+Dow Jones Islamic Market Utilit
+Dow Jones Islamic Market Utilities Index screens Shariah-compliant utilities stocks worldwide, sector benchmark for Islamic investors.
+
+Dow Jones Islamic Market Oil &
+Dow Jones Islamic Market Oil & Gas Index tracks Shariah-compliant energy stocks globally, reflecting oil-sector performance.
+
+Dow Jones Industrial Average In
+Dow Jones Industrial Average Index tracks 30 US blue-chip stocks; price-weighted benchmark for American equities.
+
+Dow Jones Islamic Market Kuwait
+Dow Jones Islamic Market Kuwait Index tracks Shariah-compliant Kuwaiti equities for Islamic investors’ benchmark.
+
+Dow Jones Industrial Average 2X
+Dow Jones Industrial Average 2X delivers double daily Dow returns, powering leveraged bull ETFs like DDM.
+
+Dow Jones Islamic Market World
+Dow Jones Islamic Market World Index tracks Shariah-compliant global equities across developed and emerging markets.
+
+Dow Jones Islamic Market U.K. I
+Dow Jones Islamic Market U.K. Index tracks Shariah-compliant British equities, benchmarking halal investment exposure.
+
+Dow Jones Islamic Market China
+Dow Jones Islamic Market China Index tracks Shariah-compliant Chinese equities, offering halal exposure to China’s stock market.
+
+Dow Jones Islamic Market India
+Dow Jones Islamic Market India Index tracks Shariah-compliant Indian equities, benchmark for halal investment exposure.
+
+Dow Jones Islamic Market Health
+Dow Jones Islamic Market Health Care Index tracks Shariah-compliant global healthcare equities.
+
+Dow Jones Islamic Market Europe
+Dow Jones Islamic Market Europe Index tracks Shariah-compliant European equities for halal investment benchmarking.
+
+CAC 40
+CAC 40 is France’s blue-chip equity index tracking 40 largest Euronext Paris companies; key market benchmark.
+
+FTSE 100
+FTSE 100 tracks 100 largest London-listed companies, serving as flagship benchmark for UK equities.
+
+FTSE China A-H 50 Index
+FTSE China A-H 50 Index tracks 50 large Chinese companies with both mainland A-shares and Hong Kong H-shares.
+
+FTSE Italia All-Share Index
+FTSE Italia All-Share Index covers Italian large, mid, small caps on Borsa Italiana; broad national equity benchmark.
+
+FTSE MIB Net Total Return (Lux)
+FTSE MIB Net Total Return (Lux) tracks Italian blue-chip stocks, reinvests dividends, Luxembourg-listed variant.
+
+FTSE Developed Europe Index - E
+FTSE Developed Europe Index tracks large-, mid-cap developed European equities, price-weighted; core regional benchmark.
+
+FTSE China A50 Index
+FTSE China A50 Index tracks 50 largest mainland Chinese A-shares; free-float weighted benchmark.
+
+FTSE ET50 Index
+FTSE Environmental Technologies 50 index tracks 50 leading global environmental tech pure-play companies across clean energy, water, waste, pollution control sectors.
+
+FTSE Emerging R/QFII Index
+Tracks emerging-market stocks; includes China A-shares at R/QFII quota weight.
+
+FTSEMIB.MI
+FTSEMIB.MI ticker denotes FTSE MIB index, tracking 40 largest, most liquid Italian equities on Borsa Italiana.
+
+FTSE Vietnam 30 Index
+FTSE Vietnam 30 Index tracks 30 largest, most liquid Vietnamese stocks; benchmark for Ho Chi Minh market.
+
+FTSE BRIC 50 Index
+FTSE BRIC 50 Index tracks 50 large BRIC equities; benchmark for Brazil, Russia, India, China exposure.
+
+FTSE Taiwan RIC Capped TWD Inde
+FTSE Taiwan RIC Capped TWD Index tracks Taiwanese equities, cap-weighted with constituent weights capped for diversification.
+
+FTSE Indonesia Index
+FTSE Indonesia Index tracks Indonesian large- and mid-cap equities; key benchmark for local market performance.
+
+FTSE SwissLife Index
+FTSE SwissLife Index tracks Swiss Life Holding share SLHN performance; used in structured investment products.
+
+FTSE CNBC Asia 100 Index
+FTSE CNBC Asia 100 Index tracks 100 large Asian stocks across developed and emerging markets.
+
+UK FTSE All Share
+FTSE All-Share index covers nearly all UK LSE main market companies; broad benchmark for overall British equities.
+
+FTSE Bursa Malaysia MidS CAP In
+FTSE Bursa Malaysia MidS Cap Index tracks Malaysian mid-small cap equities; market performance benchmark.
+
+FTSE Nareit Equity REITs Index
+FTSE Nareit Equity REITs Index tracks US equity REIT performance, free-float weighted benchmark for real estate sector.
+
+FTSE 250
+FTSE 250 tracks UK mid-cap stocks, ranking 101-350 by market value.
+
+FTSE Environmental Opportunitie
+FTSE Environmental Opportunities index tracks companies generating majority revenue from clean energy, water, waste, enabling sustainable investment exposure.
+
+FTSE China 50 3x Daily Short In
+FTSE China 50 3x Daily Short Index delivers -3× daily returns opposite underlying benchmark.
+
+FTSE NASDAQ Dubai Kuwait 15 Ind
+FTSE NASDAQ Dubai Kuwait 15 Index tracks 15 largest Kuwaiti stocks listed on Nasdaq Dubai, benchmark for Kuwait exposure.
+
+FTSE Renault Index
+FTSE Renault Index tracks Renault SA share performance; custom FTSE benchmark, often underlying structured products.
+
+NYLI FTSE INTERNATIONAL EQUITY
+NYLI FTSE International Equity Currency Neutral ETF (HFXI) tracks FTSE Developed ex-North America index, 50 % USD-hedged
+
+DAX                           P
+DAX Price Index tracks Germany's blue-chip 40 stocks, price-return only excluding dividends.
+
+DAX                           K
+DAXK Kursindex price-only version of DAX, excludes dividends, tracking 40 German blue-chip shares.
+
+S&P 500
+S&P 500 tracks 500 large-cap US stocks; leading benchmark for American equity market performance.
+
+S&P/TSX Composite index
+S&P/TSX Composite tracks about 250 TSX-listed stocks; main benchmark for Canadian equity market.
+
+HANG SENG INDEX
+Hang Seng Index tracks Hong Kong’s major listed companies; flagship Hong Kong equity benchmark.
+
+^HSIL
+HSI Volatility Index gauges 30-day implied volatility of Hang Seng, Hong Kong’s VIX-equivalent.
+
+HSBC Vantage5 Index (USD) Exces
+HSBC Vantage5 (USD) Excess Return index dynamically allocates among equities, bonds, cash targeting 5% volatility, excess-return version.
+
+HSI ESG Index
+HSI ESG Index tracks Hang Seng constituents selected by environmental, social, governance criteria.
+
+HSI ESG Enhanced Index
+HSI ESG Enhanced Index optimizes Hang Seng stocks for improved ESG scores and factor-weighted sustainability performance.
+
+S&P IPSA
+S&P IPSA tracks 30 largest, most liquid Chilean equities; flagship Santiago Stock Exchange benchmark.
+
+IDX COMPOSITE
+IDX Composite tracks all Indonesian Stock Exchange listings; primary benchmark for Indonesia equities.
+
+^JN0U.JO
+^JN0U.JO tracks FTSE/JSE Top 40 USD Net Total Return index on Johannesburg Stock Exchange. 
+
+^KLSE
+^KLSE is FTSE Bursa Malaysia KLCI index tracking 30 largest Malaysian equities; primary Kuala Lumpur market benchmark.
+
+KOSPI Composite Index
+KOSPI Composite Index tracks all South Korean KRX-listed shares; flagship benchmark for Korea’s equity market.
+
+MERVAL
+MERVAL is Argentina’s benchmark equity index, tracking leading Buenos Aires Exchange stocks.
+
+S&P/BMV IPC
+S&P/BMV IPC tracks Mexico’s largest, most liquid stocks; main benchmark for Mexican equity market performance.
+
+Nasdaq Global Travel and Leisur
+Nasdaq Global Travel & Leisure index tracks global travel, tourism, hospitality equities, free-float weighted benchmark.
+
+^N100
+^N100 is Euronext 100 index, tracks 100 large, liquid Euronext-listed companies across Europe.
+
+Nikkei 225
+Nikkei 225 tracks 225 large Japanese companies on Tokyo Stock Exchange; primary Japanese equity benchmark.
+
+NASDAQ Composite
+NASDAQ Composite tracks all Nasdaq listings; tech-heavy gauge of U.S. equity market performance.
+
+NYSE Composite Index
+NYSE Composite Index tracks every NYSE stock, serving as broad benchmark for overall U.S. equity market performance.
+
+NYSE Belgium Listed All Cap Ind
+NYSE Belgium Listed All Cap Index tracks Belgian listed equities across all capitalizations, USD-denominated benchmark.
+
+NYSE Composite Index (TR)
+NYSE Composite Index (TR) tracks all NYSE-listed stocks; total-return version reinvests dividends for comprehensive performance gauge.
+
+NYSE Composite Mini-Index
+NYSE Composite Mini-Index tracks same NYSE stocks at reduced point value, enabling cost-effective trading and hedging.
+
+NYSE France Listed All Cap Inde
+NYSE France Listed All Cap Index tracks French-listed stocks of all sizes, USD-denominated benchmark.
+
+NYSE Poland Listed All Cap Inde
+NYSE Poland Listed All Cap Index tracks Polish-listed equities across all capitalizations, USD-denominated benchmark.
+
+NYSE Denmark Listed All Cap Ind
+NYSE Denmark Listed All Cap Index tracks Danish-listed equities across all capitalizations, USD-denominated benchmark.
+
+NYSE Portugal Listed All Cap In
+NYSE Portugal Listed All Cap Index tracks Portuguese-listed equities of all sizes, USD-denominated benchmark for investors.
+
+NYSE Asia Pacific Selected High
+NYSE Asia Pacific Select High Dividend Index tracks high-yield Asia-Pacific stocks, dividend-weighted benchmark.
+
+NYSE Sweden Listed All Cap Inde
+NYSE Sweden Listed All Cap Index tracks Swedish-listed stocks of all capitalizations, USD-denominated benchmark for broad exposure.
+
+NYSE U.K. Listed All Cap Incl C
+NYSE U.K. Listed All Cap Index tracks UK-listed stocks across market capitalizations; USD-denominated benchmark for broad exposure.
+
+NYSE Germany Listed All Cap Ind
+NYSE Germany Listed All Cap Index tracks German-listed stocks across all capitalizations, USD-denominated benchmark.
+
+NYSE Belgium Listed All Cap Ind
+NYSE Belgium Listed All Cap Index tracks Belgian equities across all capitalizations; USD-denominated benchmark for broad exposure.
+
+NYSE Austria Listed All Cap Ind
+NYSE Austria Listed All Cap Index tracks Austrian stocks of every size; USD-denominated benchmark for broad exposure.
+
+NYSE Norway Listed All Cap Inde
+NYSE Norway Listed All Cap Index tracks Norwegian-listed stocks across all capitalizations; USD-denominated benchmark.
+
+NYSE Italy Listed All Cap Index
+NYSE Italy Listed All Cap Index tracks Italian-listed stocks across all capitalizations; USD-denominated benchmark.
+
+NYSE Netherlands Listed All Cap
+NYSE Netherlands Listed All Cap Index tracks Dutch-listed equities of all sizes; USD-denominated benchmark for broad exposure.
+
+NYSE Finland Listed All Cap Ind
+NYSE Finland Listed All Cap Index tracks Finnish equities across capitalizations; USD-denominated broad market benchmark.
+
+S&P/NZX 50 INDEX GROSS ( GROSS
+S&P/NZX 50 Gross tracks 50 largest NZX firms; gross version reinvests dividends, benchmarking New Zealand equities.
+
+^RUT
+Russell 2000 index (^RUT) tracks 2,000 US small-cap stocks; key benchmark for domestic small-cap performance.
+
+Russell 2000 Total Return
+Russell 2000 Total Return index tracks small-cap US stocks, reinvests dividends, gauges comprehensive small-cap performance.
+
+Russell Top 200 Dynamic Total R
+Russell Top 200 Dynamic Total Return index tracks high-volatility top-200 US large-caps, dividends reinvested.
+
+Russell Mini 2000
+Mini Russell 2000 futures track small-cap index with reduced contract value, enabling efficient hedging and trading.
+
+Russell 2000 SOQ Index
+Russell 2000 SOQ provides Special Opening Quote used to settle index options and futures on Russell 2000.
+
+Russell Top 200 Dynamic Net EUR
+Russell Top 200 Dynamic Net EUR index: large-cap U.S. equities, volatility-weighted, net dividends reinvested, EUR-hedged performance measure.
+
+Russell Top 200 Defensive Net E
+Russell Top 200 Defensive Net EUR index: large-cap U.S. equities, low-volatility tilt, net dividends reinvested, EUR-hedged performance measure.
+
+Russell 2000 Net Index
+Russell 2000 Net Total Return index reinvests dividends net of taxes, tracking US small-cap equities performance.
+
+Russell Top 200 Dynamic Net
+Russell Top 200 Dynamic Net index: US large-caps, volatility-weighted, net dividends reinvested, dynamic exposure measure.
+
+Russell Top 200 Defensive
+Russell Top 200 Defensive index weights US large-caps toward low-volatility stocks, tracking defensive factor performance.
+
+Russell Top 200 Defensive Total
+Russell Top 200 Defensive Total Return index: US large-cap low-volatility stocks, dividends reinvested.
+
+Russell Top 200 Dynamic
+Russell Top 200 Dynamic index tilts large-cap US stocks toward high volatility, tracking aggressive factor performance.
+
+Russell Top 200 Defensive Net
+Russell Top 200 Defensive Net index tracks low-volatility US mega-caps; net total return with dividends after withholding.
+
+STI Index
+Straits Times Index (STI) tracks 30 large SGX-listed Singapore blue-chips; key national equity benchmark.
+
+ISHARES BARCLAYS 0 5 YEAR TIPS
+iShares 0-5 Year TIPS Bond ETF (STIP) holds short-term Treasury inflation-protected securities, providing low-duration, inflation-hedged exposure.
+
+STI 3x Daily Leverage Index
+STI 3x Daily Leverage Index targets triple the Straits Times Index’s daily returns using synthetic leverage, underpinning leveraged ETPs.
+
+STI USD Net Tax Index
+STI USD Net Tax index: USD-denominated Straits Times variant, reinvesting dividends net of withholding taxes.
+
+STI Daily Short Index
+STI Daily Short Index delivers inverse daily return of Straits Times Index, enabling bearish or hedging exposure.
+
+CSI Petrochemical Industry Stim
+CSI Petrochemical Industry Stimulus Index tracks Chinese petrochemical stocks benefiting from state stimulus; free-float-weighted benchmark.
+
+STI 2x Daily Leverage Index
+STI 2x Daily Leverage Index targets twice the Straits Times Index’s daily return via synthetic leverage for leveraged ETPs.
+
+STI 2x Daily Short Index
+STI 2x Daily Short Index delivers double inverse daily performance of Straits Times Index, enabling leveraged bearish exposure via ETPs.
+
+STI 3x Daily Short Index
+STI 3x Daily Short Index delivers triple inverse daily Straits Times returns, enabling leveraged bearish exposure.
+
+STI Net Tax Index
+STI Net Tax Index reinvests dividends net of withholding taxes, providing total-return measure of Straits Times constituents.
+
+EURO STOXX 50
+EURO STOXX 50 tracks 50 eurozone blue-chips; flagship benchmark of eurozone equity performance.
+
+^TA125.TA
+TA-125 tracks 125 largest Tel Aviv listed Israeli stocks; primary broad Israeli market benchmark.
+
+TSEC CAPITALIZATION WEIGHTED ST
+TSEC Capitalization Weighted Stock Index (TAIEX) tracks all Taiwan-listed common shares; primary benchmark for Taiwanese equities.
+
+ICE US Dollar Index - Index - C
+ICE U.S. Dollar Index (DXY) measures USD versus six major currencies; key FX strength gauge.
+
+CBOE Volatility Index
+CBOE Volatility Index (VIX) measures expected 30-day S&P 500 volatility via option prices; called market fear gauge.
+
+CBOE S&P 500 3-Month Volatility
+VXV gauges expected S&P 500 volatility over next three months using Cboe option prices.
+
+Cboe 1-Day Volatility Index
+Cboe 1-Day Volatility Index (VIX1D) estimates S&P 500 expected volatility for the next trading day using same-day SPX option prices.
+
+The CBOE St and ard Monthly Onl
+VIXMO measures 30-day implied S&P 500 volatility using only standard monthly SPX options.
+
+CBOE S&P 500 6 Month Volatility
+VXMT measures implied six-month S&P 500 volatility via SPX options, indicating medium-term market risk.
+
+CBOE S&P 500 9 Day Volatility I
+Cboe 9-Day SPX Volatility Index (VIX9D) estimates implied S&P 500 volatility over the next nine days via SPX options.
+
+PROSHARES VIX SHORT TERM FUTURE
+ETF (ticker VIXY) tracks S&P 500 VIX Short-Term Futures; offers volatility exposure, hedging, speculation.
+
+PROSHARES VIX MID TERM FUTURES
+ETF VIXM follows S&P 500 VIX mid-term futures, providing 4-7 month volatility exposure hedge.
+
+Cboe S&P 500 One Year Volatilit
+VIX1Y gauges implied 1-year S&P 500 volatility via SPX options, indicating long-term market risk expectations.
+
+Cboe S&P 500 Constituent Volati
+Cboe’s VIXEQ measures cap-weighted 30-day implied volatility of all S\&P 500 constituent options, complementing main VIX gauge.
+
+CBOE EQUITY VIXON GOOGLE
+Equity VIX on Google (VXGOG) measures 30-day implied volatility of Alphabet options.
+
+S&P 500 VIX Short-Term Index MC
+S&P 500 VIX Short-Term Index MC tracks rolling front-two VIX futures, gauging short-term implied volatility.
+
+INDIA VIX
+India VIX measures expected 30-day volatility of Nifty 50 via OTM option prices; India’s market fear gauge.
+
+2X LONG VIX FUTURES ETF INTRADA
+UVXY ETF offers 2× daily S\&P 500 VIX short-term futures exposure for intraday volatility trading.
+
+S&P 500 VIX Mid-Term Index MCAP
+Index reflects returns of rolling 4-7 month VIX futures, capturing mid-term S\&P 500 implied volatility.
+
+iPath Series B S&P 500 VIX Shor
+iPath Series B ETN VXX tracks short-term VIX futures, offering volatility exposure with daily roll/reset.
+
+CBOE EQUITY VIXON IBM
+Equity VIX on IBM (VXIBM) measures 30-day implied volatility of IBM options.
+
+CBOE 1st VIX Futures Mid-Mornin
+Measures first-month VIX futures’ mid-morning TWAP, providing a timely snapshot of near-term implied volatility.
+
+Long VIX Futures Index
+Long VIX Futures Index tracks cumulative returns of long position in VIX futures.
+
+NYSE American Composite
+NYSE American Composite tracks all NYSE American stocks, benchmark for small-cap, emerging companies.
+
+XDAXDAX
+XDAX reflects after-hours DAX future prices, providing continuous German blue-chip market indication outside Xetra hours.
+
+NYSE American Composite Index
+NYSE American Composite Index tracks all NYSE American listings, emphasizing small-cap, emerging growth company performance.
+
+PHLX Australian Dollar
+PHLX Australian Dollar index (XAD) tracks AUD’s value versus USD on Philadelphia Stock Exchange.
+
+PHLX British Pound
+PHLX British Pound index (XBP) measures GBP’s USD exchange rate on Philadelphia Stock Exchange.
+
+ESTX xDE
+Euro STOXX ex Germany index; measures eurozone stocks minus German listings for diversified exposure.
+
+STX Glb1800 xDE
+STOXX Global 1800 ex-Germany equity index; tracks large/mid-cap stocks worldwide excluding Germany.
+
+STXE xDE
+STOXX Europe 600 ex Germany index; tracks European large/mid-cap stocks, specifically excluding German companies.
+
+STX Eua 800 xDE
+STOXX Europe 800 ex-Germany index; tracks European large/mid/small caps excluding German stocks
+
+STX Glb3000 xDE
+STOXX Global 3000 ex Germany index; tracks worldwide large-, mid-, small-cap equities, excluding German companies.
+
+PHLX Euro
+PHLX Euro index (XDE) tracks the euro’s value against the U.S. dollar on Philadelphia Stock Exchange.
+
+PHLX Yen
+PHLX Yen index (XDN) tracks Japanese yen’s value against the U.S. dollar on Philadelphia Stock Exchange.
