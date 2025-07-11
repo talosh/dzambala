@@ -1,3 +1,195 @@
+Auvergne-Rhône-Alpes
+Europe, EU, France, Lyon, Grenoble, Saint-Étienne
+
+Bourgogne-Franche-Comté
+Europe, EU, France, Dijon, Besançon, Belfort
+
+Bretagne
+Europe, EU, France, Rennes, Brest, Vannes
+
+Centre-Val de Loire
+Europe, EU, France, Orléans, Tours, Bourges
+
+Corse
+Europe, EU, France, Ajaccio, Bastia
+
+Grand Est
+Europe, EU, France, Strasbourg, Nancy, Reims
+
+Hauts-de-France
+Europe, EU, France, Lille, Amiens, Roubaix
+
+Île-de-France
+Europe, EU, France, Paris, Boulogne-Billancourt, Saint-Denis
+
+Normandie
+Europe, EU, France, Rouen, Le Havre, Caen
+
+Nouvelle-Aquitaine
+Europe, EU, France, Bordeaux, Limoges, Poitiers
+
+Occitanie
+Europe, EU, France, Toulouse, Montpellier, Nîmes
+
+Pays de la Loire
+Europe, EU, France, Nantes, Angers, Le Mans
+
+Provence-Alpes-Côte d'Azur
+Europe, EU, France, Marseille, Nice, Toulon
+
+English channel
+Europe, EU, UK, France, Belgium, Netherlands
+
+Alabama
+USA, US, Birmingham, Montgomery, Mobile
+
+Alaska
+USA, US, Anchorage, Fairbanks, Juneau
+
+Arizona
+USA, US, Phoenix, Tucson, Mesa
+
+Arkansas
+USA, US, Little Rock, Fort Smith, Fayetteville
+
+California
+USA, US, Los Angeles, San Francisco, San Diego
+
+Colorado
+USA, US, Denver, Colorado Springs, Aurora
+
+Connecticut
+USA, US, Bridgeport, New Haven, Hartford
+
+Delaware
+USA, US, Wilmington, Dover, Newark
+
+Florida
+USA, US, Jacksonville, Miami, Tampa
+
+Georgia
+USA, US, Atlanta, Augusta, Columbus
+
+Hawaii
+USA, US, Honolulu, Pearl City, Hilo
+
+Idaho
+USA, US, Boise, Meridian, Nampa
+
+Illinois
+USA, US, Chicago, Aurora, Rockford
+
+Indiana
+USA, US, Indianapolis, Fort Wayne, Evansville
+
+Iowa
+USA, US, Des Moines, Cedar Rapids, Davenport
+
+Kansas
+USA, US, Wichita, Overland Park, Kansas City
+
+Kentucky
+USA, US, Louisville, Lexington, Bowling Green
+
+Louisiana
+USA, US, New Orleans, Baton Rouge, Shreveport
+
+Maine
+USA, US, Portland, Lewiston, Bangor
+
+Maryland
+USA, US, Baltimore, Frederick, Rockville
+
+Massachusetts
+USA, US, Boston, Worcester, Springfield
+
+Michigan
+USA, US, Detroit, Grand Rapids, Warren
+
+Minnesota
+USA, US, Minneapolis, Saint Paul, Rochester
+
+Mississippi
+USA, US, Jackson, Gulfport, Hattiesburg
+
+Missouri
+USA, US, Kansas City, St. Louis, Springfield
+
+Montana
+USA, US, Billings, Missoula, Great Falls
+
+Nebraska
+USA, US, Omaha, Lincoln, Bellevue
+
+Nevada
+USA, US, Las Vegas, Henderson, Reno
+
+New Hampshire
+USA, US, Manchester, Nashua, Concord
+
+New Jersey
+USA, US, Newark, Jersey City, Paterson
+
+New Mexico
+USA, US, Albuquerque, Las Cruces, Rio Rancho
+
+New York
+USA, US, New York City, Buffalo, Rochester
+
+North Carolina
+USA, US, Charlotte, Raleigh, Greensboro
+
+North Dakota
+USA, US, Fargo, Bismarck, Grand Forks
+
+Ohio
+USA, US, Columbus, Cleveland, Cincinnati
+
+Oklahoma
+USA, US, Oklahoma City, Tulsa, Norman
+
+Oregon
+USA, US, Portland, Salem, Eugene
+
+Pennsylvania
+USA, US, Philadelphia, Pittsburgh, Allentown
+
+Rhode Island
+USA, US, Providence, Warwick, Cranston
+
+South Carolina
+USA, US, Charleston, Columbia, North Charleston
+
+South Dakota
+USA, US, Sioux Falls, Rapid City, Aberdeen
+
+Tennessee
+USA, US, Nashville, Memphis, Knoxville
+
+Texas
+USA, US, Houston, San Antonio, Dallas
+
+Utah
+USA, US, Salt Lake City, West Valley City, Provo
+
+Vermont
+USA, US, Burlington, Essex, South Burlington
+
+Virginia
+USA, US, Virginia Beach, Norfolk, Chesapeake
+
+Washington
+USA, US, Seattle, Spokane, Tacoma
+
+West Virginia
+USA, US, Charleston, Huntington, Morgantown
+
+Wisconsin
+USA, US, Milwaukee, Madison, Green Bay
+
+Wyoming
+USA, US, Cheyenne, Casper, Laramie
+
 Absolute advantage
 A concept that helps to explain international trade. If country A is better at making toasters than country B, and B is better at making kettles than A, it makes sense for each country to focus on the area where they have this advantage, and then trade toasters for kettles. But see, more importantly, comparative advantage.
 
@@ -254,7 +446,7 @@ Credit expansion
 An increase in the willingness of banks and others to lend money. This normally happens in the course of an economic boom. If credit expands too fast, this can be a sign of excessive speculation, often in the property market.
 
 Credit ratings
-See ratings.
+Measures of the riskiness of a financial instrument, provided by a ratings agency (such as Standard & Poor’s, Moody’s and Fitch). The higher the credit rating, the lower the risk, and when applied to debt instruments, the lower the interest rate the borrower has to pay. Ratings below a certain level are regarded as high-risk (see junk bonds). The ratings agencies came in for heavy criticism during the financial crisis of 2007-09, when financial instruments that had been rated highly plunged in value.
 
 Creditor
 A person or institution that is owed money.

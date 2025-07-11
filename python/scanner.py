@@ -39,6 +39,34 @@ with open(os.path.dirname(__file__) + "/topics.txt", "r") as f:
         if line:
             news_topics.add(line)
 
+def get_cryptonews_com():
+    import feedparser
+    from bs4 import BeautifulSoup
+
+    def uid_short(text: str, length: int = 24) -> str:
+        import hashlib
+        return hashlib.sha256(text.encode('utf-8')).hexdigest()[:length]
+
+    FEED_URL = "https://cryptonews.com/news/feed/"
+
+    feed = feedparser.parse(FEED_URL)
+    articles = []
+
+    for entry in feed.entries:
+        title = entry.title
+        html_summary = entry.summary
+        soup = BeautifulSoup(html_summary, "html.parser")
+        # Extract only <p> tags and join them as the article summary
+        text = ' '.join(p.get_text(strip=True) for p in soup.find_all('p'))
+
+        articles.append({
+            "title": title,
+            "text_body": text,
+            "uuid": uid_short(title)
+        })
+
+    return articles
+
 '''
 news_uuids = dict()
 uuids_file = '/var/tmp/dzambala_bews_uids.json'
@@ -105,6 +133,10 @@ while True:
 
         x = yf.Lookup("CFX-USD").get_cryptocurrency(count=1)
         x.to_csv(os.path.join(full_path, "crypto_cfxusd.csv"), index=False)
+
+        x = yf.Lookup("LTC-USD").get_cryptocurrency(count=1)
+        x.to_csv(os.path.join(full_path, "crypto_ltc.csv"), index=False)
+
         # x = yf.Lookup("CFX-EUR").get_cryptocurrency(count=1)
         # x.to_csv(os.path.join(full_path, "crypto_cfxeur.csv"), index=False)
         # x = yf.Lookup("CFX-CAD").get_cryptocurrency(count=1)
@@ -323,6 +355,9 @@ while True:
         # === News
 
         news_main_topics = [
+            'Politics',
+            'Technical Analysis',
+            'Fundamental Analysis',
             'Trading',
             'Excanges',
             'Transactions',
@@ -382,9 +417,11 @@ while True:
             'Market predictions',
             'Tariff'
         ]
-
+        
+        news_topics_list = list(news_topics)
+        random.shuffle(news_topics_list)
         # news_main_topics.extend(random.sample(list(news_topics), len(news_main_topics)))
-        news_main_topics.extend(list(news_topics))
+        news_main_topics.extend(news_topics_list)
         news_folder = os.path.abspath(os.path.join(full_path, 'news'))
         try:
             os.makedirs(news_folder)
@@ -393,8 +430,23 @@ while True:
 
         total_news = 0
 
+        try:
+            news = get_cryptonews_com()[:10]
+            for count, item in enumerate(news):
+                uid = item.get("uuid", str(uuid.uuid4()))
+                filename = f'cryptonews.{uid}.json'
+                if os.path.isfile(os.path.join(news_folder, filename)):
+                    continue
+                if uid in news_uuids:
+                    continue
+                news_uuids.add(uid)
+                with open(os.path.join(news_folder, filename), "w") as f:
+                    json.dump(item, f, indent=4, default=str)
+                total_news = total_news + 1
+        except Exception as e:
+            print (e)
+
         for topic in news_main_topics:
-            
             if total_news > 128:
                 continue
 
@@ -412,6 +464,8 @@ while True:
                     downloaded = trafilatura.fetch_url(url)
                     text = trafilatura.extract(downloaded)
                     downloaded = 'None'
+                    if not isinstance(text, str):
+                        continue
                     text = text.split('More News')[0]
                     item['text_body'] = text
                     with open(os.path.join(news_folder, filename), "w") as f:

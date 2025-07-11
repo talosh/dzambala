@@ -3,6 +3,9 @@
 # But do not ignore README.md
 !/private/README.md
 
+weights/*
+!weights/README.md
+
 # macOS system files
 .DS_Store
 .AppleDouble

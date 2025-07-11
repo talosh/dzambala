@@ -80,5 +80,5 @@ while True:
 
                     time.sleep(1)
 
-    for item in random.sample(uuids, min(2, len(uuids))):
+    for item in random.sample(list(uuids), min(2, len(uuids))):
         uuids.remove(item)

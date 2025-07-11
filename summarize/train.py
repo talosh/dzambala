@@ -1,6 +1,8 @@
 import os
 import sys
 
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -56,6 +58,11 @@ class SummDataset(torch.utils.data.Dataset):
     def reshuffle(self):
         random.shuffle(self.train_descriptions)
 
+    def rescan(self):
+        self.train_descriptions = self.find_json_files(self.data_root)
+        self.initial_train_descriptions = list(self.train_descriptions)
+        self.reshuffle()
+
     def find_json_files(self,  root_dir):
         json_files = []
         for dirpath, _, filenames in os.walk(root_dir):
@@ -67,6 +74,7 @@ class SummDataset(torch.utils.data.Dataset):
                         )
         return json_files
 
+    '''
     def read_items_thread(self, item_queue):
         while not exit_event.is_set():
             for idx in range(len(self.train_descriptions)):
@@ -81,6 +89,39 @@ class SummDataset(torch.utils.data.Dataset):
                 except Exception as e:
                     #  print (f'{e}\n\n')
                     time.sleep(1e-8)
+    '''
+
+    def read_items_thread(self, item_queue):
+        last_seen_length = len(self.train_descriptions)
+        idx = 0
+
+        while not exit_event.is_set():
+            current_length = len(self.train_descriptions)
+
+            if current_length < last_seen_length:
+                idx = 0  # restart from 0 if dataset shrank
+
+            last_seen_length = current_length
+
+            if current_length == 0:
+                time.sleep(0.5)
+                continue
+
+            if idx >= current_length:
+                idx = 0
+                continue
+
+            try:
+                file_path = self.train_descriptions[idx]
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                data['dataset_index'] = idx
+                data['file_path'] = file_path
+                item_queue.put(data)
+            except Exception as e:
+                time.sleep(1e-8)
+
+            idx += 1
 
     def __len__(self):
         return len(self.train_descriptions)
@@ -143,6 +184,8 @@ def main():
     parser.add_argument('--ckpt', type=str, default=None, help='Path to the pre-trained model state dict file)')
     parser.add_argument('--save', type=int, default=1000, help='Save model state dict each N steps (default: 1000)')
     parser.add_argument('--seed', type=int, default=12345, help='Random seed')
+    parser.add_argument('--freeze', type=int, default=0, help='Freeze preset')
+    # parser.add_argument('--freeze', action='store_true', dest='freeze', default=False, help='Reset saved step and epoch')
     parser.add_argument('--reset_stats', action='store_true', dest='reset_stats', default=False, help='Reset saved step and epoch')
 
     args = parser.parse_args()
@@ -191,6 +234,51 @@ def main():
         print (f' Done in {(time.time()-ts):.2f}s', flush=True)
         model_loaded_event.set()
     warnings.resetwarnings()
+
+
+    if args.freeze:
+        print ('\nFreezing parameters')
+
+        if args.freeze == 1:
+            # version 001
+            for i in range(25):
+                for name, param in model.named_parameters():
+                    if f'layers.{i}.' in name:
+                        param.requires_grad = False
+        elif args.freeze == 2:
+            # version 002
+            for i in range(22):
+                for name, param in model.named_parameters():
+                    if f'layers.{i}.' in name:
+                        param.requires_grad = False
+            for name, param in model.named_parameters():
+                if 'layers.22' in name:
+                    param.requires_grad = True
+            for name, param in model.named_parameters():
+                if 'layers.23' in name:
+                    param.requires_grad = True
+            for name, param in model.named_parameters():
+                if 'layers.24' in name:
+                    param.requires_grad = True
+            for name, param in model.named_parameters():
+                if 'layers.25' in name:
+                    param.requires_grad = True
+
+        elif args.freeze == 3:
+            # version 003
+            for i in range(24):
+                for name, param in model.named_parameters():
+                    if f'layers.{i}.' in name:
+                        param.requires_grad = False
+            for name, param in model.named_parameters():
+                if 'layers.25' in name:
+                    param.requires_grad = True
+
+        print ('\nUn-freezing parameters:')
+        for name, param in model.named_parameters():
+            if param.requires_grad:
+                print(name, param.requires_grad)
+
 
     def write_model_state(write_model_state_queue):
         while not exit_event.is_set():
@@ -292,9 +380,9 @@ def main():
         data_time = time.time() - time_stamp
         time_stamp = time.time()
 
-        prompt_encoded = model.tokenizer.encode(prompt)
-        max_len = max(len(prompt_encoded), max_len)
-        info += f'prompt length: {len(prompt_encoded)}, max: {max_len}\n'
+        # prompt_encoded = model.tokenizer.encode(prompt)
+        # max_len = max(len(prompt_encoded), max_len)
+        # info += f'prompt length: {len(prompt_encoded)}, max: {max_len}\n'
 
         try:
             result = model.generate(
@@ -313,6 +401,7 @@ def main():
             model_time = time.time() - time_stamp
             time_stamp = time.time()
             
+            '''
             logits_seq = torch.stack(result['all_logits'][:1], dim=0)
             logits_flat = logits_seq.permute(1, 0, 2).reshape(-1, logits_seq.size(-1))
             target_flat = torch.tensor(gt_encoded[:1], dtype=torch.long).to(device)
@@ -324,12 +413,22 @@ def main():
             target_flat = torch.tensor(gt_encoded[:4], dtype=torch.long).to(device)
             target_flat = target_flat.reshape(-1)
             loss_first4 = loss_fn(logits_flat, target_flat)
+            '''
 
             logits_seq = torch.stack(result['all_logits'], dim=0)
             logits_flat = logits_seq.permute(1, 0, 2).reshape(-1, logits_seq.size(-1))
             target_flat = torch.tensor(gt_encoded, dtype=torch.long).to(device)
             target_flat = target_flat.reshape(-1)
-            loss = 0.4 * loss_first + 0.2 * loss_first4 + loss_fn(logits_flat, target_flat)
+            loss = loss_fn(logits_flat, target_flat) # + 0.4 * loss_first + 0.2 * loss_first4
+
+            '''
+            loss.backward()
+            torch.nn.utils.clip_grad_norm_(model.parameters(), 1)
+            optimizer.step()
+            optimizer.zero_grad()
+            current_state_dict['model_state_dict'] = model.state_dict()
+            current_state_dict['ckpt_path'] = args.ckpt
+            '''
 
             (loss / args.acc).backward()
             if batch_idx % args.acc == 0:
@@ -365,6 +464,11 @@ def main():
             }
             write_model_state_queue.put(dict_to_write)
 
+            dataset.rescan()
+
+            torch.cuda.synchronize(device=device)
+            torch.cuda.empty_cache()
+
         # current_state_dict['step'] = step
         # time.sleep(0.5)
 
@@ -388,8 +492,11 @@ def main():
             epoch = epoch + 1
             batch_idx = 0
 
+            dataset.rescan()
+
             torch.cuda.synchronize(device=device)
             torch.cuda.empty_cache()
+
 
     '''
 

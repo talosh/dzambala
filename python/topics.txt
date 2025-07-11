@@ -1,3 +1,6 @@
+Finance
+Politics
+
 ADA
 Cardano
 USD
@@ -216,6 +219,8 @@ Capital Controls
 Black Market
 Hyperinflation
 Austerity Measures
+Taxes
+Tax
 Tax Reform
 Public Spending
 Spending
