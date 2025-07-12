@@ -164,13 +164,7 @@ def get_dataset(
             self.h = frame_size
             self.w = frame_size
 
-            source_folder_path = os.path.abspath(os.path.join(data_root, 'source'))
-
-            if not os.path.isdir(source_folder_path):
-                print (f'Error: No source folder in {data_root}')
-                sys.exit()
-
-            source_exr_files = [os.path.join(source_folder_path, file) for file in os.listdir(source_folder_path) if file.endswith('.exr')]
+            source_exr_files = self.find_files(data_root, 'exr')
 
             source_exr_files = sorted(source_exr_files)
             print (f'Found {len(source_exr_files)} files')
@@ -207,7 +201,18 @@ def get_dataset(
 
         def reshuffle(self):
             random.shuffle(self.train_descriptions)
-            
+
+        def find_files(self, root_dir, ext):
+            files = []
+            for dirpath, _, filenames in os.walk(root_dir):
+                for filename in filenames:
+                    if filename.endswith(f'.{ext}'):
+                        files.append(
+                            os.path.abspath(
+                                os.path.join(dirpath, filename))
+                            )
+            return files
+
         def read_frames_thread(self):
             timeout = 1e-8
             while True:
@@ -246,7 +251,8 @@ def get_dataset(
             
             # Ensure the crop fits within the original dimensions
             if crop_h > orig_h or crop_w > orig_w:
-                raise ValueError(f"Crop size ({crop_h}, {crop_w}) is larger than the image dimensions ({orig_h}, {orig_w}).")
+                return img0, img1
+                # raise ValueError(f"Crop size ({crop_h}, {crop_w}) is larger than the image dimensions ({orig_h}, {orig_w}).")
 
             # Randomly select top-left corner for the crop
             x = np.random.randint(0, orig_h - crop_h + 1)
@@ -280,31 +286,6 @@ def get_dataset(
             images_idx = self.train_data_index
             src_img0 = torch.from_numpy(train_data['source']).permute(2, 0, 1)
 
-            _, h, w = src_img0.shape
-            src_img1 = torch.nn.functional.interpolate(src_img0.unsqueeze(0), scale_factor = 1/3.2, mode='bicubic', align_corners=True, antialias=True)
-            src_img1 = torch.nn.functional.interpolate(src_img1, size = (h, w), mode='bicubic', align_corners=True, antialias=True)[0]
-
-            '''
-            if random.uniform(0, 1) > 0.5:
-                src_img0 = torch.nn.functional.interpolate(src_img0.unsqueeze(0), scale_factor = 1/1.2, mode='bilinear', align_corners=False)[0]
-                src_img1 = torch.nn.functional.interpolate(src_img1.unsqueeze(0), scale_factor = 1/1.2, mode='bilinear', align_corners=False)[0]
-            elif random.uniform(0, 1) > 0.5:
-                src_img0 = torch.nn.functional.interpolate(src_img0.unsqueeze(0), scale_factor = 1/1.4, mode='bilinear', align_corners=False)[0]
-                src_img1 = torch.nn.functional.interpolate(src_img1.unsqueeze(0), scale_factor = 1/1.4, mode='bilinear', align_corners=False)[0]
-
-            c, h, w = src_img0.shape
-
-            horizontal = torch.linspace(-1, 1, w).view(1, w)
-            horizontal = horizontal.expand(h, w)
-            vertical = torch.linspace(-1, 1, h).view(h, 1)
-            vertical = vertical.expand(h, w)
-            grid = torch.stack((horizontal, vertical), dim=0)
-            src_img0 = torch.cat((src_img0, grid), 0)
-            rel_diff = (torch.abs(src_img0 - src_img1) / torch.abs(src_img1) + 1e-8).mean()
-            jitter_seed = torch.tanh(torch.ones_like(src_img0[:1, :, :]) * 0 + rel_diff)
-            src_img0 = torch.cat((src_img0, jitter_seed), 0)
-            '''
-
             def horizontal_flip(img):
                 return img.flip(dims=[2])
 
@@ -325,15 +306,16 @@ def get_dataset(
 
             for index in range(self.batch_size):
 
-                img0, img1 = self.crop(src_img0, src_img1, self.h, self.w)
+                # 
+
+                img0, _ = self.crop(src_img0, src_img0, self.h, self.w)
+                img0 = torch.nn.functional.interpolate(img0.unsqueeze(0), scale_factor = 1 / 2, mode='bilinear')[0]
 
                 if random.uniform(0, 1) > 0.5:
                     img0 = horizontal_flip(img0)
-                    img1 = horizontal_flip(img1)
 
                 if random.uniform(0, 1) > 0.5:
                     img0 = vertical_flip(img0)
-                    img1 = vertical_flip(img1)
 
                 '''
                 if random.uniform(0, 1) > 0.5:
@@ -347,12 +329,10 @@ def get_dataset(
 
                 if random.uniform(0, 1) > 0.5:
                     img0 = rotate_180(img0)
-                    img1 = rotate_180(img1)
 
                 batch_img0.append(img0)
-                batch_img1.append(img1)
 
-            return torch.stack(batch_img0), torch.stack(batch_img1), images_idx
+            return torch.stack(batch_img0), images_idx
 
     return MLDataset(
         data_root,
@@ -772,7 +752,7 @@ def main():
         traned_model_name = f'{model_info.get("name")}_{create_timestamp_uid()}.pth'
         trained_model_dir = os.path.join(
             os.path.dirname(os.path.abspath(__file__)),
-            'trained_models'
+            'weights'
         )
         if not os.path.isdir(trained_model_dir):
             os.makedirs(trained_model_dir)
@@ -857,16 +837,6 @@ def main():
     data_time2 = 0
     train_time = 0
 
-    # LPIPS Init
-    import warnings
-    warnings.filterwarnings('ignore', category=UserWarning)
-    warnings.filterwarnings('ignore', category=FutureWarning)
-    import lpips
-    os.environ['TORCH_HOME'] = os.path.abspath(os.path.dirname(__file__))
-    loss_fn_alex = lpips.LPIPS(net='alex')
-    loss_fn_alex.to(device)
-    warnings.resetwarnings()
-
     if args.freeze:
         for param in net.lut.parameters():
             param.requires_grad = False
@@ -895,15 +865,13 @@ def main():
     while True:
         time_stamp = time.time()
 
-        img0, img1, idx = dataset[batch_idx]
+        img0, idx = dataset[batch_idx]
 
         data_time = time.time() - time_stamp
         time_stamp = time.time()
 
-
         img0 = img0.to(device, non_blocking = True)
         img0_orig = img0[:, :3, :, :].detach().clone()
-        img1 = img1.to(device, non_blocking = True)
 
         current_lr_str = str(f'{optimizer.param_groups[0]["lr"]:.2e}')
         optimizer.zero_grad()
@@ -914,7 +882,10 @@ def main():
         net.train()
 
         # 'y' represents the high-resolution target image, while 'x' represents the low-resolution image to be conditioned upon
-        x = img1
+        x = img0.clone()
+        n, c, h, w = img0.shape
+        noise = torch.rand(n, c, h, w // 2, device=img0.device, dtype=img0.dtype)
+        x[:, :, :, w//2:] = noise
         y = img0
         ts = torch.randint(low = 1, high = net.time_steps, size = (args.batch, ))
         gamma = net.alpha_hats[ts].to(device)
@@ -936,10 +907,12 @@ def main():
         loss.backward()
         torch.nn.utils.clip_grad_norm_(net.parameters(), 1)
 
+        '''
         if platform.system() == 'Darwin':
             torch.mps.synchronize()
         else:
             torch.cuda.synchronize(device=device)
+        '''
 
         optimizer.step()
 

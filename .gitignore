@@ -3,8 +3,10 @@
 # But do not ignore README.md
 !/private/README.md
 
-weights/*
-!weights/README.md
+*/weights/*
+!*/weights/README.md
+
+*.pth
 
 # macOS system files
 .DS_Store
