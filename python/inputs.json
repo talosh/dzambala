@@ -4,7 +4,7 @@
         "Group": 1,
         "Code": "Cardano USD",
         "Description": "Cardano’s ADA trades versus USD; proof-of-stake blockchain token used for fees, staking, governance.",
-        "News": [
+        "Keywords": [
             "ADA",
             "Cardano",
             "USD",
@@ -16,7 +16,7 @@
         "Group": 1,
         "Code": "BNB USD",
         "Description": "BNB/USD shows Binance Coin’s price in US dollars; token powers Binance ecosystem, fees, staking, governance.",
-        "News": [
+        "Keywords": [
             "BNB",
             "Binance",
             "USD",
@@ -28,7 +28,7 @@
         "Group": 1,
         "Code": "Bitcoin CAD",
         "Description": "Bitcoin/CAD Bitcoin’s value in Canadian dollars; popular on Canadian exchanges for trading, arbitrage, hedging exposure, risk management.",
-        "News": [
+        "Keywords": [
             "BTC",
             "Bitcoin",
             "CAD",
@@ -40,7 +40,7 @@
         "Group": 0,
         "Code": "Bitcoin EUR",
         "Description": "Bitcoin/EUR denotes BTC priced in euros; used for trading, arbitrage, hedging euro exposure, widely listed on exchanges.",
-        "News": [
+        "Keywords": [
             "BTC",
             "Bitcoin",
             "Euro",
@@ -52,7 +52,7 @@
         "Group": 0,
         "Code": "Bitcoin GBP",
         "Description": "Bitcoin/GBP shows BTC price in British pounds; used for trading, arbitrage, hedging sterling exposure on UK exchanges.",
-        "News": [
+        "Keywords": [
             "BTC",
             "Bitcoin",
             "GBP",
@@ -67,7 +67,7 @@
         "Group": 0,
         "Code": "Bitcoin USD",
         "Description": "Bitcoin/USD quotes Bitcoin price in US dollars; primary benchmark for trading, settlement, arbitrage, risk management.",
-        "News": [
+        "Keywords": [
             "BTC",
             "Bitcoin",
             "USD",
@@ -79,7 +79,7 @@
         "Group": 0,
         "Code": "Conflux USD",
         "Description": "Conflux/USD quotes CFX price in US dollars; layer-1 blockchain token for transactions, staking, governance, cross-chain interoperability.",
-        "News": [
+        "Keywords": [
             "CFX",
             "Conflux",
             "USD",
@@ -91,7 +91,7 @@
         "Group": 1,
         "Code": "Dogecoin USD",
         "Description": "Dogecoin/USD shows DOGE price in US dollars; meme-origin coin used for tipping, payments, trading, hedging exposure.",
-        "News": [
+        "Keywords": [
             "DOGE",
             "Dogecoin",
             "USD",
@@ -103,7 +103,7 @@
         "Group": 1,
         "Code": "Ethereum CAD",
         "Description": "Ethereum/CAD quotes ETH price in Canadian dollars; common on Canadian exchanges for trading, hedging exposure.",
-        "News": [
+        "Keywords": [
             "ETH",
             "Ethereum",
             "CAD",
@@ -115,7 +115,7 @@
         "Group": 0,
         "Code": "Ethereum EUR",
         "Description": "Ethereum/EUR quotes ETH price in euros; used for trading, arbitrage, staking yields, hedging euro exposure.",
-        "News": [
+        "Keywords": [
             "ETH",
             "Ethereum",
             "Euro",
@@ -127,7 +127,7 @@
         "Group": 0,
         "Code": "Ethereum GBP",
         "Description": "Ethereum/GBP quotes ETH price in British pounds; used on UK exchanges for trading, hedging sterling exposure.",
-        "News": [
+        "Keywords": [
             "ETH",
             "Ethereum",
             "GBP",
@@ -142,7 +142,7 @@
         "Group": 0,
         "Code": "Ethereum USD",
         "Description": "Ethereum/USD quotes ETH price in US dollars; main benchmark pair for trading, settlement, arbitrage, DeFi pricing.",
-        "News": [
+        "Keywords": [
             "ETH",
             "Ethereum",
             "USD",
@@ -154,7 +154,7 @@
         "Group": 1,
         "Code": "Pepe USD",
         "Description": "Pepe/USD shows PEPE meme-token's USD price; ERC-20 frog-inspired coin, purely speculative, traded on exchanges, DEX liquidity pools.",
-        "News": [
+        "Keywords": [
             "PEPE",
             "USD",
             "US dollar"
@@ -165,7 +165,7 @@
         "Group": 1,
         "Code": "Solana USD",
         "Description": "Solana/USD quotes SOL price in US dollars; high-throughput blockchain token for trading, staking, DeFi exposure, hedging dollar risk.",
-        "News": [
+        "Keywords": [
             "Solana",
             "SOL",
             "USD",
@@ -177,7 +177,7 @@
         "Group": 0,
         "Code": "USDC USD",
         "Description": "USDC/USD quotes Circle’s USDC stablecoin to US dollars; typically 1:1 peg for trading, payments, settlements.",
-        "News": [
+        "Keywords": [
             "USDC",
             "Circle",
             "Stablecoin",
@@ -190,7 +190,7 @@
         "Group": 0,
         "Code": "Tether USDt USD",
         "Description": "Tether/USDT USD quotes tether’s dollar stablecoin; aims 1:1 peg, used for trading, liquidity, settlements.",
-        "News": [
+        "Keywords": [
             "USDT",
             "Tether",
             "Stablecoin",
@@ -203,7 +203,7 @@
         "Group": 0,
         "Code": "Monero GBP",
         "Description": "Monero/GBP quotes XMR price in British pounds; privacy coin traded on UK exchanges for hedging and anonymity.",
-        "News": [
+        "Keywords": [
             "XMR",
             "Monero",
             "GBP",
@@ -218,7 +218,7 @@
         "Group": 0,
         "Code": "Monero USD",
         "Description": "Monero/USD quotes XMR price in US dollars; privacy coin enabling anonymous payments, trading, hedging dollar exposure.",
-        "News": [
+        "Keywords": [
             "XMR",
             "Monero",
             "USD",
@@ -230,7 +230,7 @@
         "Group": 1,
         "Code": "XRP CAD",
         "Description": "XRP/CAD quotes XRP price in Canadian dollars; used for trading, remittances, arbitrage, hedging Canadian exposure.",
-        "News": [
+        "Keywords": [
             "XRP",
             "CAD",
             "Canadian dollar"
@@ -241,7 +241,7 @@
         "Group": 0,
         "Code": "XRP EUR",
         "Description": "XRP/EUR quotes XRP price in euros; used for trading, remittances, hedging euro exposure on major European exchanges.",
-        "News": [
+        "Keywords": [
             "XRP",
             "Euro",
             "EUR"
@@ -252,7 +252,7 @@
         "Group": 0,
         "Code": "XRP GBP",
         "Description": "XRP/GBP quotes XRP price in British pounds; used for trading, remittances, hedging sterling exposure.",
-        "News": [
+        "Keywords": [
             "XRP",
             "GBP",
             "Pound",
@@ -266,7 +266,7 @@
         "Group": 0,
         "Code": "XRP USD",
         "Description": "XRP/USD quotes Ripple's XRP price in US dollars; used for trading, remittances, arbitrage, hedging dollar exposure.",
-        "News": [
+        "Keywords": [
             "XRP",
             "USD",
             "US dollar"
@@ -277,7 +277,7 @@
         "Group": 0,
         "Code": "GBP/CHF",
         "Description": "GBP/CHF = British Pound vs. Swiss Franc. It's a forex pair showing how many CHF per GBP",
-        "News": [
+        "Keywords": [
             "GBP",
             "Pound",
             "British pound",
@@ -292,7 +292,7 @@
         "Group": 2,
         "Code": "EUR/CAD",
         "Description": "EUR/CAD = Euro versus Canadian Dollar. Shows how many CAD one Euro buys.",
-        "News": [
+        "Keywords": [
             "Euro",
             "EUR",
             "CAD",
@@ -305,7 +305,7 @@
         "Group": 2,
         "Code": "EUR/CHF",
         "Description": "EUR/CHF = Euro versus Swiss Franc. Indicates how many CHF one Euro buys.",
-        "News": [
+        "Keywords": [
             "Euro",
             "EUR",
             "CHF",
@@ -318,7 +318,7 @@
         "Group": 2,
         "Code": "EUR/HUF",
         "Description": "EUR/HUF = Euro vs. Hungarian Forint. Shows how many HUF one Euro buys.",
-        "News": [
+        "Keywords": [
             "Euro",
             "EUR",
             "Hungarian Forint",
@@ -331,7 +331,7 @@
         "Group": 2,
         "Code": "EUR/JPY",
         "Description": "EUR/JPY = Euro vs. Japanese Yen. Indicates how many Yen one Euro buys.",
-        "News": [
+        "Keywords": [
             "Euro",
             "EUR",
             "JPY",
@@ -345,7 +345,7 @@
         "Group": 2,
         "Code": "EUR/SEK",
         "Description": "EUR/SEK = Euro vs. Swedish Krona. Shows how many SEK one Euro buys.",
-        "News": [
+        "Keywords": [
             "Euro",
             "EUR",
             "Swedish Krona",
@@ -358,7 +358,7 @@
         "Group": 2,
         "Code": "EUR/USD",
         "Description": "EUR/USD = Euro vs. US Dollar. Indicates how many USD one Euro buys.",
-        "News": [
+        "Keywords": [
             "Euro",
             "EUR",
             "USD",
@@ -370,7 +370,7 @@
         "Group": 2,
         "Code": "GBP/AUD",
         "Description": "GBP/AUD = British Pound vs. Australian Dollar. Shows how many AUD one GBP buys.",
-        "News": [
+        "Keywords": [
             "GBP",
             "Pound",
             "British pound",
@@ -386,7 +386,7 @@
         "Group": 2,
         "Code": "GBP/BRL",
         "Description": "GBP/BRL = British Pound vs. Brazilian Real. Indicates how many BRL one GBP buys.",
-        "News": [
+        "Keywords": [
             "GBP",
             "Pound",
             "British pound",
@@ -402,7 +402,7 @@
         "Group": 2,
         "Code": "GBP/CAD",
         "Description": "GBP/CAD = British Pound vs. Canadian Dollar. Shows how many CAD one GBP buys.",
-        "News": [
+        "Keywords": [
             "GBP",
             "Pound",
             "British pound",
@@ -418,7 +418,7 @@
         "Group": 2,
         "Code": "GBP/CHF",
         "Description": "GBP/CHF = British Pound vs. Swiss Franc. Indicates how many CHF one GBP buys.",
-        "News": [
+        "Keywords": [
             "GBP",
             "Pound",
             "British pound",
@@ -434,7 +434,7 @@
         "Group": 2,
         "Code": "GBP/CNY",
         "Description": "GBP/CNY = British Pound vs. Chinese Yuan. Shows how many CNY one GBP buys.",
-        "News": [
+        "Keywords": [
             "GBP",
             "Pound",
             "British pound",
@@ -450,7 +450,7 @@
         "Group": 2,
         "Code": "GBP/EUR",
         "Description": "GBP/EUR = British Pound vs. Euro. Indicates how many Euros one GBP buys.",
-        "News": [
+        "Keywords": [
             "GBP",
             "Pound",
             "British pound",
@@ -465,7 +465,7 @@
         "Group": 2,
         "Code": "GBP/INR",
         "Description": "GBP/INR = British Pound vs. Indian Rupee. Shows how many INR one GBP buys.",
-        "News": [
+        "Keywords": [
             "GBP",
             "Pound",
             "British pound",
@@ -481,7 +481,7 @@
         "Group": 2,
         "Code": "GBP/JPY",
         "Description": "GBP/JPY = British Pound vs. Japanese Yen. Shows how many Yen one GBP buys.",
-        "News": [
+        "Keywords": [
             "GBP",
             "Pound",
             "British pound",
@@ -497,7 +497,7 @@
         "Group": 2,
         "Code": "GBP/NOK",
         "Description": "GBP/NOK = British Pound vs. Norwegian Krone. Shows how many NOK one GBP buys.",
-        "News": [
+        "Keywords": [
             "GBP",
             "Pound",
             "British pound",
@@ -513,7 +513,7 @@
         "Group": 2,
         "Code": "GBP/QAR",
         "Description": "GBP/QAR = British Pound vs. Qatari Riyal. Shows how many QAR one GBP buys.",
-        "News": [
+        "Keywords": [
             "GBP",
             "Pound",
             "British pound",
@@ -529,7 +529,7 @@
         "Group": 0,
         "Code": "GBP/USD",
         "Description": "GBP/USD = British Pound vs. US Dollar. Indicates how many USD one GBP buys.",
-        "News": [
+        "Keywords": [
             "GBP",
             "Pound",
             "British pound",
@@ -544,7 +544,7 @@
         "Group": 2,
         "Code": "GBP/ZAR",
         "Description": "GBP/ZAR = British Pound vs. South African Rand. Shows how many ZAR one GBP buys.",
-        "News": [
+        "Keywords": [
             "GBP",
             "Pound",
             "British pound",
@@ -560,7 +560,7 @@
         "Group": 2,
         "Code": "USD/CAD",
         "Description": "USD/CAD = US Dollar vs. Canadian Dollar. Shows how many CAD one USD buys.",
-        "News": [
+        "Keywords": [
             "US Dollar",
             "USD",
             "Canadian Dollar",
@@ -573,7 +573,7 @@
         "Group": 2,
         "Code": "CAD/XDR",
         "Description": "CAD/XDR = Canadian Dollar vs. IMF’s Special Drawing Rights (XDR). Shows CAD value in XDR",
-        "News": [
+        "Keywords": [
             "Canadian Dollar",
             "CAD",
             "IMF"
@@ -584,7 +584,7 @@
         "Group": 2,
         "Code": "CAD/XAF",
         "Description": "CAD/XAF = Canadian Dollar vs. Central African CFA Franc. Shows how many XAF one CAD buys.",
-        "News": [
+        "Keywords": [
             "Canadian Dollar",
             "CAD",
             "Central African CFA Franc",
@@ -597,7 +597,7 @@
         "Group": 2,
         "Code": "CAD/XOF",
         "Description": "CAD/XOF = Canadian Dollar vs. West African CFA Franc. Shows how many XOF one CAD buys.",
-        "News": [
+        "Keywords": [
             "Canadian Dollar",
             "CAD",
             "West African CFA Franc",
@@ -609,7 +609,7 @@
         "Group": 2,
         "Code": "CAD/XCU",
         "Description": "CAD/XCU = Canadian Dollar vs. Copper unit. Not a standard FX pair; likely commodity pricing.",
-        "News": [
+        "Keywords": [
             "Canadian Dollar",
             "CAD",
             "XCU",
@@ -621,7 +621,7 @@
         "Group": 2,
         "Code": "CAD/XPF",
         "Description": "CAD/v = Canadian Dollar vs. CFP Franc. Shows how many XPF one CAD buys.",
-        "News": [
+        "Keywords": [
             "Canadian Dollar",
             "CAD",
             "CFP Franc",
@@ -633,7 +633,7 @@
         "Group": 2,
         "Code": "CAD/XCD",
         "Description": "CAD/XCD = Canadian Dollar vs. East Caribbean Dollar. Shows how many XCD one CAD buys.",
-        "News": [
+        "Keywords": [
             "Canadian Dollar",
             "CAD",
             "East Caribbean Dollar",
@@ -645,7 +645,7 @@
         "Group": 2,
         "Code": "CAD/XCG",
         "Description": "CAD/XCG = Canadian Dollar vs. East Caribbean Guilder. Shows how many XCG one CAD buys.",
-        "News": [
+        "Keywords": [
             "Canadian Dollar",
             "CAD",
             "East Caribbean Guilder",
@@ -657,7 +657,7 @@
         "Group": 2,
         "Code": "USD/CHF",
         "Description": "USD/CHF = US Dollar vs. Swiss Franc. Shows how many CHF one USD buys.",
-        "News": [
+        "Keywords": [
             "USD",
             "US Dollar",
             "CHF",
@@ -669,7 +669,7 @@
         "Group": 2,
         "Code": "CHF/XDR",
         "Description": "CHF/XDR = Swiss Franc vs. IMF Special Drawing Rights. Shows how many XDR one CHF buys.",
-        "News": [
+        "Keywords": [
             "CHF",
             "Swiss Franc",
             "IMF"
@@ -680,7 +680,7 @@
         "Group": 2,
         "Code": "CHF/XCD",
         "Description": "CHF/XCD = Swiss Franc vs. East Caribbean Dollar. Shows how many XCD one CHF buys.",
-        "News": [
+        "Keywords": [
             "CHF",
             "Swiss Franc",
             "East Caribbean Dollar",
@@ -692,7 +692,7 @@
         "Group": 2,
         "Code": "CHF/XOF",
         "Description": "CHF/XOF = Swiss Franc vs. West African CFA Franc. Shows how many XOF one CHF buys.",
-        "News": [
+        "Keywords": [
             "CHF",
             "Swiss Franc",
             "West African CFA Franc",
@@ -704,7 +704,7 @@
         "Group": 2,
         "Code": "CHF/XPF",
         "Description": "CHF/XPF = Swiss Franc vs. CFP Franc. Shows how many XPF one CHF buys.",
-        "News": [
+        "Keywords": [
             "CHF",
             "Swiss Franc",
             "CFP Franc",
@@ -716,7 +716,7 @@
         "Group": 2,
         "Code": "CHF/XAF",
         "Description": "CHF/XAF = Swiss Franc vs. Central African CFA Franc. Shows how many XAF one CHF buys.",
-        "News": [
+        "Keywords": [
             "CHF",
             "Swiss Franc",
             "Central African CFA Franc",
@@ -728,7 +728,7 @@
         "Group": 2,
         "Code": "CHF/XCG",
         "Description": "CHF/XCG = Swiss Franc vs. East Caribbean Guilder. Shows how many XCG one CHF buys.",
-        "News": [
+        "Keywords": [
             "CHF",
             "Swiss Franc",
             "East Caribbean Guilder",
@@ -740,7 +740,7 @@
         "Group": 2,
         "Code": "USD/CNY",
         "Description": "USD/CNY = US Dollar vs. Chinese Yuan. Shows how many CNY one USD buys.",
-        "News": [
+        "Keywords": [
             "US Dollar",
             "USD",
             "Chinese Yuan",
@@ -752,7 +752,7 @@
         "Group": 2,
         "Code": "CNY/XDR",
         "Description": "CNY/XDR = Chinese Yuan vs. IMF Special Drawing Rights. Shows how many XDR one CNY buys.",
-        "News": [
+        "Keywords": [
             "Chinese Yuan",
             "CNY",
             "IMF"
@@ -763,7 +763,7 @@
         "Group": 2,
         "Code": "CNY/XCU",
         "Description": "CNY/XCU = Chinese Yuan vs. Copper. Not a standard pair; XCU is a commodity.",
-        "News": [
+        "Keywords": [
             "Chinese Yuan",
             "CNY",
             "Copper"
@@ -774,7 +774,7 @@
         "Group": 0,
         "Code": "USD/GBP",
         "Description": "USD/GBP = US Dollar vs. British Pound. Shows how many GBP one USD buys.",
-        "News": [
+        "Keywords": [
             "British Pound",
             "GBP",
             "US Dollar",
@@ -786,7 +786,7 @@
         "Group": 2,
         "Code": "GBP/XOF",
         "Description": "GBP/XOF = British Pound vs. West African CFA Franc. Shows how many XOF one GBP buys.",
-        "News": [
+        "Keywords": [
             "British Pound",
             "GBP",
             "West African CFA Franc",
@@ -798,7 +798,7 @@
         "Group": 2,
         "Code": "GBP/XDR",
         "Description": "GBP/XDR = British Pound vs. IMF Special Drawing Rights. Shows how many XDR one GBP buys.",
-        "News": [
+        "Keywords": [
             "British Pound",
             "GBP",
             "IMF"
@@ -809,7 +809,7 @@
         "Group": 2,
         "Code": "GBP/XPF",
         "Description": "GBP/XPF = British Pound vs. CFP Franc French overseas. Shows how many XPF one GBP buys.",
-        "News": [
+        "Keywords": [
             "British Pound",
             "GBP",
             "CFP Franc",
@@ -821,7 +821,7 @@
         "Group": 2,
         "Code": "GBP/XCD",
         "Description": "GBP/XCD = British Pound vs. East Caribbean Dollar. Shows how many XCD one GBP buys.",
-        "News": [
+        "Keywords": [
             "British Pound",
             "GBP",
             "East Caribbean Dollar",
@@ -833,10 +833,614 @@
         "Group": 2,
         "Code": "GBP/XCU",
         "Description": "GBP/XCU = British Pound vs. Copper. Not a standard pair; XCU represents a commodity.",
-        "News": [
+        "Keywords": [
             "British Pound",
             "GBP",
             "Copper"
+        ]
+    },
+    {
+        "id":  66,
+        "Group": 2,
+        "Code": "GBP/XAF",
+        "Description": "GBP/XPF = British Pound vs. CFP Franc French overseas. Shows how many XPF one GBP buys.",
+        "Keywords": [
+            "British Pound",
+            "GBP",
+            "Central African CFA Franc"
+        ]
+    },
+    {
+        "id":  67,
+        "Group": 2,
+        "Code": "GBP/XCG",
+        "Description": "GBP/XCD = British Pound vs. East Caribbean Dollar. Shows how many XCD one GBP buys.",
+        "Keywords": [
+            "British Pound",
+            "GBP",
+            "Caribbean Guilder"
+        ]
+    },
+    {
+        "id":  68,
+        "Group": 2,
+        "Code": "USD/INR",
+        "Description": "USD/INR = US Dollar vs. Indian Rupee. Shows how many INR one USD buys.",
+        "Keywords": [
+            "USD",
+            "US Dollar",
+            "INR",
+            "Indian Rupee"
+        ]
+    },
+    {
+        "id":  69,
+        "Group": 2,
+        "Code": "INR/XDR",
+        "Description": "INR/XDR = Indian Rupee vs. IMF Special Drawing Rights. Shows how many XDR one INR buys.",
+        "Keywords": [
+            "INR",
+            "Indian Rupee"
+        ]
+    },
+    {
+        "id":  70,
+        "Group": 2,
+        "Code": "INR/XCU",
+        "Description": "INR/XCU = Indian Rupee vs. Copper. Not a standard pair; XCU denotes a commodity.",
+        "Keywords": [
+            "INR",
+            "Indian Rupee",
+            "Copper"
+        ]
+    },
+    {
+        "id":  71,
+        "Group": 2,
+        "Code": "USD/JPY",
+        "Description": "USD/JPY = US Dollar vs. Japanese Yen. Shows how many JPY one USD buys.",
+        "Keywords": [
+            "USD",
+            "US Dollar",
+            "JPY",
+            "Japanese Yen"
+        ]
+    },
+    {
+        "id":  72,
+        "Group": 2,
+        "Code": "JPY/XDR",
+        "Description": "JPY/XDR = Japanese Yen vs. IMF Special Drawing Rights. Shows how many XDR one JPY buys.",
+        "Keywords": [
+            "JPY",
+            "Japanese Yen"
+        ]
+    },
+    {
+        "id":  73,
+        "Group": 2,
+        "Code": "JPY/XPF",
+        "Description": "JPY/XPF = Japanese Yen vs. CFP Franc. Shows how many XPF one JPY buys.",
+        "Keywords": [
+            "JPY",
+            "Japanese Yen",
+            "CFP",
+            "Franc"
+        ]
+    },
+    {
+        "id":  74,
+        "Group": 2,
+        "Code": "JPY/XAF",
+        "Description": "JPY/XAF = Japanese Yen vs. Central African CFA Franc. Shows how many XAF one JPY buys.",
+        "Keywords": [
+            "JPY",
+            "Japanese Yen",
+            "CFA",
+            "Central African Franc"
+        ]
+    },
+    {
+        "id":  75,
+        "Group": 2,
+        "Code": "JPY/XOF",
+        "Description": "JPY/XOF = Japanese Yen vs. West African CFA Franc. Shows how many XOF one JPY buys.",
+        "Keywords": [
+            "JPY",
+            "Japanese Yen",
+            "CFA",
+            "West African Franc"
+        ]
+    },
+    {
+        "id":  76,
+        "Group": 2,
+        "Code": "JPY/XCU",
+        "Description": "JPY/XCU = Japanese Yen vs. Copper. Not a standard pair; XCU is a commodity.",
+        "Keywords": [
+            "JPY",
+            "Japanese Yen",
+            "Copper"
+        ]
+    },
+    {
+        "id":  77,
+        "Group": 2,
+        "Code": "JPY/XCD",
+        "Description": "JPY/XCD = Japanese Yen vs. East Caribbean Dollar. Shows how many XCD one JPY buys.",
+        "Keywords": [
+            "JPY",
+            "Japanese Yen",
+            "XCD",
+            "East Caribbean Dollar"
+        ]
+    },
+    {
+        "id":  78,
+        "Group": 2,
+        "Code": "JPY/XCG",
+        "Description": "JPY/XCG = Japanese Yen vs. East Caribbean Guilder. Shows how many XCG one JPY buys.",
+        "Keywords": [
+            "JPY",
+            "Japanese Yen",
+            "XCG",
+            "East Caribbean Guilder"
+        ]
+    },
+    {
+        "id":  79,
+        "Group": 2,
+        "Code": "USD/RUB",
+        "Description": "USD/RUB = US Dollar vs. Russian Ruble. Shows how many RUB one USD buys.",
+        "Keywords": [
+            "USD",
+            "US Dollar",
+            "RUB",
+            "Russian Ruble"
+        ]
+    },
+    {
+        "id":  80,
+        "Group": 2,
+        "Code": "RUB/XDR",
+        "Description": "RUB/XDR = Russian Ruble vs. IMF Special Drawing Rights. Shows how many XDR one RUB buys.",
+        "Keywords": [
+            "RUB",
+            "Russian Ruble"
+        ]
+    },
+    {
+        "id":  81,
+        "Group": 2,
+        "Code": "RUB/XCU",
+        "Description": "RUB/XCU = Russian Ruble vs. Copper. Not a valid pair; XCU is a commodity.",
+        "Keywords": [
+            "RUB",
+            "Russian Ruble",
+            "Copper"
+        ]
+    },
+    {
+        "id":  82,
+        "Group": 2,
+        "Code": "USD/UAH",
+        "Description": "USD/UAH = US Dollar vs. Ukrainian Hryvnia. Shows how many UAH one USD buys.",
+        "Keywords": [
+            "USD",
+            "US Dollar",
+            "UAH",
+            "Ukrainian Hryvnia"
+        ]
+    },
+    {
+        "id":  83,
+        "Group": 2,
+        "Code": "Brent Crude Oil",
+        "Description": "Brent Crude Oil is a global benchmark for oil prices, sourced from the North Sea.",
+        "Keywords": [
+            "Brent",
+            "Oil"
+        ]
+    },
+    {
+        "id":  84,
+        "Group": 2,
+        "Code": "Live Cattle",
+        "Description": "Live Cattle raised for beef production, sold before slaughter, traded futures contracts.",
+        "Keywords": [
+            "Cattle"
+        ]
+    },
+    {
+        "id":  85,
+        "Group": 2,
+        "Code": "Cocoa",
+        "Description": "Cocoa commodity cacao beans, chocolate; traded futures contracts.",
+        "Keywords": [
+            "Cocoa"
+        ]
+    },
+    {
+        "id":  86,
+        "Group": 2,
+        "Code": "Coffee",
+        "Description": "Coffee commodity beans, global markets, especially Arabica and Robusta varieties.",
+        "Keywords": [
+            "Coffee"
+        ]
+    },
+    {
+        "id":  87,
+        "Group": 2,
+        "Code": "Copper",
+        "Description": "Copper key industrial commodity construction, power, electronics; traded global futures spot markets.",
+        "Keywords": [
+            "Copper"
+        ]
+    },
+    {
+        "id":  88,
+        "Group": 2,
+        "Code": "Corn",
+        "Description": "Corn major agricultural commodity food, feed, and biofuel; widely traded in global futures markets.",
+        "Keywords": [
+            "Corn"
+        ]
+    },
+    {
+        "id":  89,
+        "Group": 2,
+        "Code": "Cotton",
+        "Description": "Cotton is a soft fiber commodity used in textiles; globally traded in futures for hedging and speculation.",
+        "Keywords": [
+            "Cottton"
+        ]
+    },
+    {
+        "id":  90,
+        "Group": 2,
+        "Code": "Natural Gas",
+        "Description": "Natural gas is a fossil fuel commodity used for heating, electricity, and industry; traded on global energy markets.",
+        "Keywords": [
+            "Natural Gas",
+            "Gas"
+        ]
+    },
+    {
+        "id":  91,
+        "Group": 0,
+        "Code": "Gold",
+        "Description": "Gold is a precious metal commodity used for jewelry, investment, and reserves; traded globally in futures and spot markets.",
+        "Keywords": [
+            "Gold"
+        ]
+    },
+    {
+        "id":  92,
+        "Group": 2,
+        "Code": "Lean Hogs",
+        "Description": "Lean Hogs are futures contracts for pork production, used to hedge or speculate on hog prices in livestock markets.",
+        "Keywords": [
+            "Lean Hogs"
+        ]
+    },
+    {
+        "id":  93,
+        "Group": 2,
+        "Code": "Oat",
+        "Description": "Oat is an agricultural commodity used for food and livestock feed; traded in futures markets for price risk management.",
+        "Keywords": [
+            "Oat"
+        ]
+    },
+    {
+        "id":  94,
+        "Group": 2,
+        "Code": "Crude Oil",
+        "Description": "Crude Oil is an unrefined fossil fuel, essential for energy production; traded globally via futures and spot markets.",
+        "Keywords": [
+            "Crude Oil",
+            "Oil"
+        ]
+    },
+    {
+        "id":  95,
+        "Group": 2,
+        "Code": "Orange Juice",
+        "Description": "Orange Juice is a soft commodity from oranges, traded as frozen concentrate futures, mainly on U.S. exchanges.",
+        "Keywords": [
+            "Orange Juice"
+        ]
+    },
+    {
+        "id":  96,
+        "Group": 0,
+        "Code": "Silver",
+        "Description": "Silver is a precious metal commodity used in industry, jewelry, and investment; traded globally in futures and spot markets.",
+        "Keywords": [
+            "Silver"
+        ]
+    },
+    {
+        "id":  97,
+        "Group": 1,
+        "Code": "Micro Silver",
+        "Description": "Micro Silver futures are smaller-sized silver contracts, allowing smaller investors to trade silver commodity exposure.",
+        "Keywords": [
+            "Micro Silver"
+        ]
+    },
+    {
+        "id":  98,
+        "Group": 1,
+        "Code": "E-mini Silver",
+        "Description": "E-mini Silver futures are electronically traded, smaller silver contracts for more accessible market participation.",
+        "Keywords": [
+            "E-mini Silver"
+        ]
+    },
+    {
+        "id":  99,
+        "Group": 2,
+        "Code": "Soybean",
+        "Description": "Soybean is a major agricultural commodity used for food, oil, and animal feed; traded on global futures markets.",
+        "Keywords": [
+            "Soybean"
+        ]
+    },
+    {
+        "id":  100,
+        "Group": 2,
+        "Code": "Sugar",
+        "Description": "Sugar is a global agricultural commodity derived from sugarcane or beet; traded in futures markets for price risk management.",
+        "Keywords": [
+            "Sugar"
+        ]
+    },
+    {
+        "id":  101,
+        "Group": 2,
+        "Code": "KC HRW Wheat",
+        "Description": "KC HRW Wheat is Hard Red Winter wheat, a U.S. commodity traded on Kansas City exchange for baking quality.",
+        "Keywords": [
+            "KC HRW Wheat"
+        ]
+    },
+    {
+        "id":  102,
+        "Group": 2,
+        "Code": "Feeder Cattle",
+        "Description": "Feeder Cattle are young cattle raised for beef; futures contracts hedge or speculate on their price changes.",
+        "Keywords": [
+            "Cattle"
+        ]
+    },
+    {
+        "id":  103,
+        "Group": 2,
+        "Code": "000001.SS",
+        "Description": "000001.SS is the Shanghai Composite Index, tracking all Shanghai Stock Exchange A and B shares.",
+        "Keywords": [
+            "Shanghai"
+        ]
+    },
+    {
+        "id":  104,
+        "Group": 2,
+        "Code": "MSCI EUROPE",
+        "Description": "MSCI Europe Index tracks large and mid cap equities across 15 developed European markets.",
+        "Keywords": [
+            "Europe",
+            "European markets",
+            "EU"
+        ]
+    },
+    {
+        "id":  105,
+        "Group": 2,
+        "Code": "ALL ORDINARIES [XAO]",
+        "Description": "All Ordinaries (XAO) tracks Australia’s 500 largest ASX-listed companies, broad benchmark of market performance.",
+        "Keywords": [
+            "XAO",
+            "Australia"
+        ]
+    },
+    {
+        "id":  106,
+        "Group": 2,
+        "Code": "S&P/ASX 200 [XJO]",
+        "Description": "S&P/ASX 200 (XJO) tracks 200 largest ASX-listed stocks, benchmark for Australian equity market performance.",
+        "Keywords": [
+            "XJO",
+            "Australia"
+        ]
+    },
+    {
+        "id":  107,
+        "Group": 2,
+        "Code": "BEL 20",
+        "Description": "BEL 20 is Belgium’s blue-chip stock index, tracking 20 major Euronext Brussels companies, serving as national market benchmark.",
+        "Keywords": [
+            "Belgium",
+            "Euronext"
+        ]
+    },
+    {
+        "id":  108,
+        "Group": 2,
+        "Code": "S&P BSE SENSEX",
+        "Description": "S&P BSE SENSEX: India’s flagship index tracking 30 large BSE-listed companies; primary benchmark for Indian equities.",
+        "Keywords": [
+            "India"
+        ]
+    },
+    {
+        "id":  109,
+        "Group": 2,
+        "Code": "^BUK100P",
+        "Description": "BUK100P is Cboe UK 100 price-return index, tracking 100 largest UK companies, similar to FTSE 100.",
+        "Keywords": [
+            "UK",
+            "Britain"
+        ]
+    },
+    {
+        "id":  110,
+        "Group": 2,
+        "Code": "IBOVESPA",
+        "Description": "Ibovespa is Brazil’s primary equity index, tracking about 80 large, liquid B3-listed stocks.",
+        "Keywords": [
+            "Brazil",
+            "South America",
+            "Latin America"
+        ]
+    },
+    {
+        "id":  111,
+        "Group": 2,
+        "Code": "S&P/B3 Ibovespa VIX",
+        "Description": "Ibovespa VIX measures expected volatility of Brazil’s Ibovespa via S&P/B3 options, analogous to U.S. VIX.",
+        "Keywords": [
+            "Brazil",
+            "South America",
+            "Latin America"
+        ]
+    },
+    {
+        "id":  112,
+        "Group": 2,
+        "Code": "EGX 30 Price Return Index",
+        "Description": "EGX 30 Price Return Index tracks 30 largest liquid Egyptian Exchange stocks; benchmark measure of Cairo market.",
+        "Keywords": [
+            "Egyptian",
+            "Cairo"
+        ]
+    },
+    {
+        "id":  113,
+        "Group": 2,
+        "Code": "Dow Jones Industrial Average",
+        "Description": "Dow Jones Industrial Average tracks 30 large U.S. blue-chip stocks; key benchmark of American equity market performance.",
+        "Keywords": [
+            "US",
+            "America",
+            "Dow Jones",
+            "blue-chip"
+        ]
+    },
+    {
+        "id":  114,
+        "Group": 2,
+        "Code": "Dow Jones Internet Composite To",
+        "Description": "Dow Jones Internet Composite tracks U.S. internet stocks, cap-weighted benchmark for online-sector performance.",
+        "Keywords": [
+            "Internet",
+            "online",
+            "Dow Jones"
+        ]
+    },
+    {
+        "id":  115,
+        "Group": 2,
+        "Code": "Dow Jones Islamic Market Utilit",
+        "Description": "Dow Jones Islamic Market Utilities Index screens Shariah-compliant utilities stocks worldwide, sector benchmark for Islamic investors.",
+        "Keywords": [
+        ]
+    },
+    {
+        "id":  116,
+        "Group": 2,
+        "Code": "Dow Jones Islamic Market Oil &",
+        "Description": "Dow Jones Islamic Market Oil & Gas Index tracks Shariah-compliant energy stocks globally, reflecting oil-sector performance.",
+        "Keywords": [
+        ]
+    },
+    {
+        "id":  117,
+        "Group": 2,
+        "Code": "Dow Jones Industrial Average In",
+        "Description": "Dow Jones Industrial Average Index tracks 30 US blue-chip stocks; price-weighted benchmark for American equities.",
+        "Keywords": [
+        ]
+    },
+    {
+        "id":  118,
+        "Group": 1,
+        "Code": "Dow Jones Islamic Market Kuwait",
+        "Description": "Dow Jones Islamic Market Kuwait Index tracks Shariah-compliant Kuwaiti equities for Islamic investors’ benchmark.",
+        "Keywords": [
+        ]
+    },
+    {
+        "id":  119,
+        "Group": 2,
+        "Code": "Dow Jones Industrial Average 2X",
+        "Description": "Dow Jones Industrial Average 2X delivers double daily Dow returns, powering leveraged bull ETFs like DDM.",
+        "Keywords": [
+        ]
+    },
+    {
+        "id":  120,
+        "Group": 2,
+        "Code": "Dow Jones Islamic Market World",
+        "Description": "Dow Jones Islamic Market World Index tracks Shariah-compliant global equities across developed and emerging markets.",
+        "Keywords": [
+        ]
+    },
+    {
+        "id":  121,
+        "Group": 2,
+        "Code": "Dow Jones Islamic Market U.K. I",
+        "Description": "Dow Jones Islamic Market U.K. Index tracks Shariah-compliant British equities, benchmarking halal investment exposure.",
+        "Keywords": [
+        ]
+    },
+    {
+        "id":  122,
+        "Group": 2,
+        "Code": "Dow Jones Islamic Market China",
+        "Description": "Dow Jones Islamic Market China Index tracks Shariah-compliant Chinese equities, offering halal exposure to China’s stock market.",
+        "Keywords": [
+        ]
+    },
+    {
+        "id":  123,
+        "Group": 2,
+        "Code": "Dow Jones Islamic Market India",
+        "Description": "Dow Jones Islamic Market India Index tracks Shariah-compliant Indian equities, benchmark for halal investment exposure.",
+        "Keywords": [
+        ]
+    },
+    {
+        "id":  124,
+        "Group": 2,
+        "Code": "Dow Jones Islamic Market Health",
+        "Description": "Dow Jones Islamic Market Health Care Index tracks Shariah-compliant global healthcare equities.",
+        "Keywords": [
+        ]
+    },
+    {
+        "id":  125,
+        "Group": 2,
+        "Code": "Dow Jones Islamic Market Europe",
+        "Description": "Dow Jones Islamic Market Europe Index tracks Shariah-compliant European equities for halal investment benchmarking.",
+        "Keywords": [
+        ]
+    },
+    {
+        "id":  126,
+        "Group": 2,
+        "Code": "CAC 40",
+        "Description": "CAC 40 is France’s blue-chip equity index tracking 40 largest Euronext Paris companies; key market benchmark.",
+        "Keywords": [
+        ]
+    },
+    {
+        "id":  127,
+        "Group": 2,
+        "Code": "FTSE 100",
+        "Description": "FTSE 100 tracks 100 largest London-listed companies, serving as flagship benchmark for UK equities.",
+        "Keywords": [
         ]
     },
 
@@ -844,21 +1448,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
     {
-        "id":  0,
+        "id":  12,
         "Group": 1,
         "Code": "",
         "Description": "",
-        "News": [
+        "Keywords": [
             "",
             "",
             "",

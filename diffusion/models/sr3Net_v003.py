@@ -441,7 +441,7 @@ class HeadAtt(torch.nn.Module):
         super(HeadAtt, self).__init__()
         self.encode = torch.nn.Sequential(
             torch.nn.Conv2d(4, c, 5, 2, 2, padding_mode = 'reflect'),
-            myPReLU(c),
+            torch.nn.ELU(),
             torch.nn.Conv2d(c, c, 3, 1, 1, padding_mode = 'reflect'),
             torch.nn.PReLU(c, 0.2),
             torch.nn.Conv2d(c, c, 3, 1, 1, padding_mode = 'reflect'),
@@ -455,26 +455,36 @@ class HeadAtt(torch.nn.Module):
     def forward(self, x):
         hp = self.hpass(x)
         x = torch.cat((x, hp), 1)
+
+        n, c, h, w = x.shape
+        ph = self.maxdepth - (h % self.maxdepth)
+        pw = self.maxdepth - (w % self.maxdepth)
+        padding = (0, pw, 0, ph)
+        x = torch.nn.functional.pad(x, padding)
+
         x = self.encode(x)
         x = self.attn(x)
         x = self.lastconv(x)
-        return x
+        return x[:, :, :h, :w]
 
-class ResConvEmb_Old(torch.nn.Module):
+class ResConvEmb(torch.nn.Module):
     def __init__(self, c, dilation=1):
         super().__init__()
         self.conv = torch.nn.Conv2d(c, c, 3, 1, dilation, dilation = dilation, groups = 1, padding_mode = 'reflect', bias=True)
         self.beta = torch.nn.Parameter(torch.ones((1, c, 1, 1)), requires_grad=True)
         self.relu = torch.nn.PReLU(c, 0.2)
-        self.mlp = FeatureModulator(1, c)
+        self.embedding_dims = c
+        self.embedding = GammaEncoding(self.embedding_dims)
+        self.mlp = FeatureModulator(c, c)
 
     def forward(self, x):
-        x_scalar = x[1]
+        time = x[1]
         x = x[0]
-        x = self.relu(self.mlp(x_scalar, self.conv(x)) * self.beta + x)
-        return x, x_scalar
+        time_embedding = self.embedding(time) # .view(-1, self.embedding_dims, 1, 1)
+        x = self.relu(self.mlp(time_embedding, self.conv(x)) * self.beta + x)
+        return x, time
 
-class ResConvEmb(torch.nn.Module):
+class ResConvEmb_(torch.nn.Module):
     def __init__(self, c, dilation=1):
         super().__init__()
         self.conv = torch.nn.Conv2d(c, c, 3, 1, dilation, dilation = dilation, groups = 1, padding_mode = 'zeros', bias=True)
@@ -498,15 +508,14 @@ class ResConvAtt(torch.nn.Module):
         self.relu = torch.nn.PReLU(c, 0.2)
         self.embedding_dims = c
         self.embedding = GammaEncoding(self.embedding_dims)
-
-        # self.mlp = FeatureModulator(1, c)
+        self.mlp = FeatureModulator(c, c)
         self.attn = FourierChannelAttention(c, c, 24, norm=False)
 
     def forward(self, x):
         time = x[1]
         x = self.attn(x[0])
-        time_embedding = self.embedding(time).view(-1, self.embedding_dims, 1, 1)
-        x = self.relu(self.conv(x) * self.beta + x) + time_embedding
+        time_embedding = self.embedding(time) # .view(-1, self.embedding_dims, 1, 1)
+        x = self.relu(self.mlp(time_embedding, self.conv(x)) * self.beta + x)
         return x, time
 
 class UpMix(torch.nn.Module):
@@ -744,14 +753,12 @@ class GammaEncoding(nn.Module):
     def __init__(self, dim):
         super().__init__()
         self.dim = dim
-
         self.linear = nn.Linear(dim, dim)
-        self.act = nn.LeakyReLU()
+        self.act = torch.nn.PReLU(dim) # nn.LeakyReLU()
 
     def forward(self, noise_level):
         count = self.dim // 2
         step = torch.arange(count, dtype=noise_level.dtype, device=noise_level.device) / count
-
         encoding = noise_level.unsqueeze(1) * torch.exp(log(1e4) * step.unsqueeze(0))
         encoding = torch.cat([torch.sin(encoding), torch.cos(encoding)], dim=-1)
         return self.act(self.linear(encoding))
@@ -801,15 +808,12 @@ class Model:
                 return torch.stack(noised_examples), noise
 
             def forward(self, x, t):
-                f = self.encode(x[:, :3, :, :])
-                x = torch.cat((f, x), 1)
-
-                print (x.shape)
-                import sys
-                sys.exit()
-
+                n, c, h, w = x.shape
+                f = torch.zeros(n, 8, h, w, device=x.device, dtype=x.dtype)
+                f[:, :, :, :w//2] = self.encode(x[:, :3, :, :w//2])
+                x = torch.cat([f, x], dim = 1)
                 return self.model(x, t)
-            
+
         self.model = DiffusionModel
         self.training_model = DiffusionModel
 

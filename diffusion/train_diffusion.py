@@ -304,8 +304,7 @@ def get_dataset(
             batch_img0 = []
             batch_img1 = []
 
-            for index in range(self.batch_size):
-
+            for index in range(self.batch_size):                
                 # 
 
                 img0, _ = self.crop(src_img0, src_img0, self.h, self.w)
@@ -331,6 +330,9 @@ def get_dataset(
                     img0 = rotate_180(img0)
 
                 batch_img0.append(img0)
+
+                train_data = random.choice(self.last_train_data)
+                src_img0 = torch.from_numpy(train_data['source']).permute(2, 0, 1)
 
             return torch.stack(batch_img0), images_idx
 
@@ -892,7 +894,7 @@ def main():
         ts = ts.to(device = device)
         img_noise, target_noise = net.add_noise(y, ts)
         y = torch.cat([x, img_noise], dim = 1)
-        predicted_noise = net.model(y, gamma)
+        predicted_noise = net(y, gamma)
 
         loss_l1 = criterion_l1(target_noise, predicted_noise)
         loss = loss_l1

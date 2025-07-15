@@ -247,10 +247,13 @@ def main():
                         param.requires_grad = False
         elif args.freeze == 2:
             # version 002
-            for i in range(22):
+            for i in range(21):
                 for name, param in model.named_parameters():
                     if f'layers.{i}.' in name:
                         param.requires_grad = False
+            for name, param in model.named_parameters():
+                if 'layers.21' in name:
+                    param.requires_grad = True
             for name, param in model.named_parameters():
                 if 'layers.22' in name:
                     param.requires_grad = True
@@ -487,7 +490,7 @@ def main():
         if ( idx + 1 ) == len(dataset):
             clear_lines(lines_to_clear + 1)
             lines_to_clear = 0
-            print (f'[Epoch {(epoch + 1):04} Step {step} - {days:02}d {hours:02}:{minutes:02}] Avg: {avg_loss}\n')
+            print (f'[Epoch {(epoch + 1):04} Step {step} - {days:02}d {hours:02}:{minutes:02}] Avg: {avg_loss:.4f}\n')
             avg_loss = 0
             epoch = epoch + 1
             batch_idx = 0
